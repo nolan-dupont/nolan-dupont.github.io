@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio - Site web statique pour une entreprise</title>
+			<link rel="stylesheet" href="/style/header.css">
+
+			<link rel="stylesheet" href="/style/main.css">
+
+			<link rel="stylesheet" href="/style/toc.css">
+
+			<link rel="stylesheet" href="/style/footer.css">
+
+			<link rel="stylesheet" href="/style/terminal.css">
+
+			<link rel="stylesheet" href="/style/responsive.css">
+
+						<title>Site web statique pour une entreprise</title>
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<h1><a href="	/index.html
+">Portfolio</a></h1>
+				<button id="main-burger-button" class="menu-control" onclick="showMainMenu()">					<img class="icon" src="/images/icons/dark/menu.svg" width="" height="">
+</button>
+				<button id="hide-main-menu" class="menu-control" onclick="hideMainMenu()">					<img class="icon" src="/images/icons/dark/xmark.svg" width="" height="">
+</button>
+			</div>
+			<hr id="main-menu-separator">
+			<nav id="main-menu">
+				<form id="searchbar" action="	/search.html
+" method="get">
+					<input id="search-field" name="s" type="search" placeholder="Chercher des projets...">
+					<button id="search-button" type="submit">					<img class="icon" src="/images/icons/dark/magnifying-glass.svg" width="20" height="20">
+</button>
+					<div id="search-results">
+						<p id="no-results">Aucun projet trouvé</p>
+					</div>
+				</form>
+
+				<a href="	/index.html
+">Accueil</a>
+				<a href="	/projects.html
+">Projets</a>
+				<a href="	/skills.html
+">Compétences</a>
+				<a class="contact-me" href="	/contact.html
+">Me contacter</a>
+			</nav>
+		</header>
+
+		<main>
+			<div id="title">
+				<!-- <a href="	/projects.html
+#static-enterprise-website">Projets</a> -->
+				<h1><a href="	/projects.html
+#static-enterprise-website">Projets</a> 🞂 Site web statique pour une entreprise</h1>
+				<div id="page-controls">
+					<button id="dark-theme-toggle" class="theme-toggle">					<img src="/images/icons/moon-solid.svg" width="20" height="20">
+</button>
+					<button id="light-theme-toggle" class="theme-toggle">					<img src="/images/icons/sun-regular.svg" width="20" height="20">
+</button>
+					<select id="language" name="language">
+													<option
+								value="fr"
+								onclick="window.location.href = '/projects/static-enterprise-website.html'"
+								selected>
+								🇫🇷
+							</option>
+											</select>
+				</div>
+			</div>
+
+			<hr>
+
+			<div id="content">
+					<button id="nav-burger-button" class="menu-control" onclick="showNavMenu()">					<img class="icon" src="/images/icons/dark/menu.svg" width="20" height="20">
+</button>
+
+	
+	<aside id="table-of-contents" class="side-menu">
+		<p>Contenu [<a href="#">Haut de page</a>]</p>
+		<button id="hide-nav-menu" class="menu-control" onclick="hideNavMenu()">					<img class="icon" src="/images/icons/dark/xmark.svg" width="" height="">
+</button>
+		<hr>
+			<ul>
+			<li>
+			<a href="#description">Description</a>
+								</li>
+			<li>
+			<a href="#voir-aussi">Voir aussi</a>
+								</li>
+		</ul>
+
+	</aside>
+
+	<section>
+					
+<h2 id="description" class="section">
+	Description
+	<button class="go-to-section" onclick="goto('description')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+	<article class="aligned-content">
+		<div class="content-column">
+			description
+		</div>
+
+		<aside class="info-box">
+	
+<h1>Site web statique pour une entreprise</h1>
+<table>
+	<tr>
+		<th>Compétences</th>
+		<td>	<div id="" class=" tag-list">
+				<a class="tag tag-project-management"
+		name="project-management"
+		href="	/search.html
+?tag=Gestion de projets"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/list-check.svg" width="10" height="10">
+
+				Gestion de projets
+	</a>
+
+				<a class="tag tag-teamwork"
+		name="teamwork"
+		href="	/search.html
+?tag=Travail d&#039;équipe"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/people-group.svg" width="10" height="10">
+
+				Travail d&#039;équipe
+	</a>
+
+		</div>
+</td>
+	</tr>
+	<tr>
+		<th>Étiquettes</th>
+		<td>	<div id="" class=" tag-list">
+				<a class="tag tag-web"
+		name="web"
+		href="	/search.html
+?tag=Web"
+		style="background-color: rgb(51, 204, 255); border-color: rgb(31, 122, 153);"
+		onmouseover="this.style.backgroundColor='rgb(43, 173, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(51, 204, 255)';">
+				Web
+	</a>
+
+				<a class="tag tag-html/css"
+		name="html/css"
+		href="	/search.html
+?tag=HTML/CSS"
+		style="background-color: rgb(238, 68, 102); border-color: rgb(143, 41, 61);"
+		onmouseover="this.style.backgroundColor='rgb(202, 58, 87)';" 
+		onmouseout="this.style.backgroundColor='rgb(238, 68, 102)';">
+				HTML/CSS
+	</a>
+
+		</div>
+</td>
+	</tr>
+</table>
+<h2>Équipe</h2>
+<table>
+	<tr>
+		<th>Taille</th>
+		<td>4 membres</td>
+	</tr>
+	</table>
+</aside>
+	</article>
+
+	
+		
+			
+<h2 id="voir-aussi" class="section">
+	Voir aussi
+	<button class="go-to-section" onclick="goto('voir-aussi')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+	<article class="aligned-content">
+		<div class="content-column">
+			<div class="thumbnails">
+			<a href="	/projects/chatodyssee.html
+">
+						<img src="/images/projects/chatodyssee/cover.png" width="120">
+						<p>Chatodyssée</p>
+	</a>
+	</div>
+
+		</div>
+	</article>
+		
+	</section>
+			</div>
+		</main>
+
+		<footer>
+			<div id="socials">
+				<a href="mailto:nolan.dupont@proton.me" target="_blank">					<img class="icon" src="/images/icons/dark/mail.svg" width="20" height="20">
+</a>
+				<a href="https://gitlab.com/nolan-dupont" target="_blank">					<img class="icon" src="/images/icons/dark/gitlab.svg" width="20" height="20">
+</a>
+				<a href="https://github.com/nolan-dupont" target="_blank">					<img class="icon" src="/images/icons/dark/github.svg" width="20" height="20">
+</a>
+			</div>
+			<hr>
+			<div>
+				<p>Lisez le <a href="https://github.com/nolan-dupont/portfolio">code source</a> de cette page sur GitHub.</p>
+			</div>
+			<hr>
+			<div id="copyrights">
+				<p>Les icônes de ce site proviennent do <a href="https://fontawesome.com">FontAwesome 					<img class="icon" src="/images/icons/dark/font-awesome.svg" width="12" height="12">
+</a>.</p>
+			</div>
+		</footer>
+
+			<script src="/scripts/main.js"></script>
+
+			<script src="/scripts/theme.js"></script>
+
+			<script src="/scripts/terminal.js"></script>
+
+			</body>
+
+</html>

@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio - Application de gestion d&#039;évènements</title>
+			<link rel="stylesheet" href="/style/header.css">
+
+			<link rel="stylesheet" href="/style/main.css">
+
+			<link rel="stylesheet" href="/style/toc.css">
+
+			<link rel="stylesheet" href="/style/footer.css">
+
+			<link rel="stylesheet" href="/style/terminal.css">
+
+			<link rel="stylesheet" href="/style/responsive.css">
+
+						<title>Application de gestion d&#039;évènements</title>
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<h1><a href="	/index.html
+">Portfolio</a></h1>
+				<button id="main-burger-button" class="menu-control" onclick="showMainMenu()">					<img class="icon" src="/images/icons/dark/menu.svg" width="" height="">
+</button>
+				<button id="hide-main-menu" class="menu-control" onclick="hideMainMenu()">					<img class="icon" src="/images/icons/dark/xmark.svg" width="" height="">
+</button>
+			</div>
+			<hr id="main-menu-separator">
+			<nav id="main-menu">
+				<form id="searchbar" action="	/search.html
+" method="get">
+					<input id="search-field" name="s" type="search" placeholder="Chercher des projets...">
+					<button id="search-button" type="submit">					<img class="icon" src="/images/icons/dark/magnifying-glass.svg" width="20" height="20">
+</button>
+					<div id="search-results">
+						<p id="no-results">Aucun projet trouvé</p>
+					</div>
+				</form>
+
+				<a href="	/index.html
+">Accueil</a>
+				<a href="	/projects.html
+">Projets</a>
+				<a href="	/skills.html
+">Compétences</a>
+				<a class="contact-me" href="	/contact.html
+">Me contacter</a>
+			</nav>
+		</header>
+
+		<main>
+			<div id="title">
+				<!-- <a href="	/projects.html
+#event-management-application">Projets</a> -->
+				<h1><a href="	/projects.html
+#event-management-application">Projets</a> 🞂 Application de gestion d&#039;évènements</h1>
+				<div id="page-controls">
+					<button id="dark-theme-toggle" class="theme-toggle">					<img src="/images/icons/moon-solid.svg" width="20" height="20">
+</button>
+					<button id="light-theme-toggle" class="theme-toggle">					<img src="/images/icons/sun-regular.svg" width="20" height="20">
+</button>
+					<select id="language" name="language">
+													<option
+								value="fr"
+								onclick="window.location.href = '/projects/event-management-application.html'"
+								selected>
+								🇫🇷
+							</option>
+											</select>
+				</div>
+			</div>
+
+			<hr>
+
+			<div id="content">
+					<button id="nav-burger-button" class="menu-control" onclick="showNavMenu()">					<img class="icon" src="/images/icons/dark/menu.svg" width="20" height="20">
+</button>
+
+	
+	<aside id="table-of-contents" class="side-menu">
+		<p>Contenu [<a href="#">Haut de page</a>]</p>
+		<button id="hide-nav-menu" class="menu-control" onclick="hideNavMenu()">					<img class="icon" src="/images/icons/dark/xmark.svg" width="" height="">
+</button>
+		<hr>
+			<ul>
+			<li>
+			<a href="#description">Description</a>
+							<ul>
+			<li>
+			<a href="#produit-final">Produit final</a>
+								</li>
+			<li>
+			<a href="#détails-techniques">Détails techniques</a>
+								</li>
+			<li>
+			<a href="#rôle">Rôle</a>
+								</li>
+		</ul>
+		</li>
+			<li>
+			<a href="#galerie">Galerie</a>
+								</li>
+			<li>
+			<a href="#voir-aussi">Voir aussi</a>
+								</li>
+		</ul>
+
+	</aside>
+
+	<section>
+					
+<h2 id="description" class="section">
+	Description
+	<button class="go-to-section" onclick="goto('description')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+	<article class="aligned-content">
+		<div class="content-column">
+		
+Dans le cadre de ce projet, nous avons développé par groupe de 5 personnes une
+application de gestion d'évènement.
+Le thème de l'application était libre, nous avons décidé de créer un application
+à destination des propriétaires de salons de jeux de sociétés.
+<br>
+Cette application permet de gérer le matériel, les membres, les employés, les
+commandes et planning d'une petite entreprise.
+
+
+<h3 id="produit-final" class="subsection">
+	Produit final
+	<button class="go-to-section" onclick="goto('produit-final')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h3>
+<hr>
+
+Un image du produit final est disponible dans la galerie (voir
+		<a href="#figure-owner-view">Figure 2</a>
+).
+Il s'agit de la vue de l'application du gérant du salon de jeu. Il a accès à
+toutes les fonctionnalités de l'application, tandis que les gestionnaires n'ont
+pas accès au planning, et les animateurs n'ont accès qu'au planning.
+
+
+<h3 id="détails-techniques" class="subsection">
+	Détails techniques
+	<button class="go-to-section" onclick="goto('détails-techniques')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h3>
+<hr>
+
+Ce projet a utilisé la bibliothèque d'interface graphique JavaFX, il a reçu une
+semaine de cadrage de projet, suivi immédiatement d'une semaine de
+développement.
+
+Aucune de base de données relationnelle n'a été utilisée, à la place nous avons
+utilisé la sérialisation de classes Java pour enregistrer l'état de
+l'application.
+
+
+<h3 id="rôle" class="subsection">
+	Rôle
+	<button class="go-to-section" onclick="goto('rôle')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h3>
+<hr>
+
+Mon rôle a été dans un premier temps de participer à la phase cadrage de projet,
+durant laquelle nous avons créé un document de conception, pris en compte les
+contraintes du projet, choisi un logo et avons fait des diagrammes UML.
+
+Parmi ces diagrammes UML, nous avons réalisé un diagramme de classe.
+
+		</div>
+
+		<aside class="info-box">
+	<img id="project-cover" src="/images/projects/event-management-application/cover.png" width="250">
+
+<h1>Application de gestion d&#039;évènements</h1>
+<table>
+	<tr>
+		<th>Compétences</th>
+		<td>	<div id="" class=" tag-list">
+				<a class="tag tag-application-development"
+		name="application-development"
+		href="	/search.html
+?tag=Développement d&#039;applications"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/code.svg" width="10" height="10">
+
+				Développement d&#039;applications
+	</a>
+
+				<a class="tag tag-programs-optimization"
+		name="programs-optimization"
+		href="	/search.html
+?tag=Optimisation de programmes"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/gear.svg" width="10" height="10">
+
+				Optimisation de programmes
+	</a>
+
+				<a class="tag tag-project-management"
+		name="project-management"
+		href="	/search.html
+?tag=Gestion de projets"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/list-check.svg" width="10" height="10">
+
+				Gestion de projets
+	</a>
+
+				<a class="tag tag-teamwork"
+		name="teamwork"
+		href="	/search.html
+?tag=Travail d&#039;équipe"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/people-group.svg" width="10" height="10">
+
+				Travail d&#039;équipe
+	</a>
+
+		</div>
+</td>
+	</tr>
+	<tr>
+		<th>Étiquettes</th>
+		<td>	<div id="" class=" tag-list">
+				<a class="tag tag-java"
+		name="java"
+		href="	/search.html
+?tag=Java"
+		style="background-color: rgb(255, 102, 0); border-color: rgb(153, 61, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 87, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 102, 0)';">
+				Java
+	</a>
+
+				<a class="tag tag-javafx"
+		name="javafx"
+		href="	/search.html
+?tag=JavaFX"
+		style="background-color: rgb(255, 204, 102); border-color: rgb(153, 122, 61);"
+		onmouseover="this.style.backgroundColor='rgb(217, 173, 87)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 204, 102)';">
+				JavaFX
+	</a>
+
+		</div>
+</td>
+	</tr>
+</table>
+<h2>Équipe</h2>
+<table>
+	<tr>
+		<th>Taille</th>
+		<td>5 membres</td>
+	</tr>
+		<tr>
+		<th>Mon rôle</th>
+		<td>Développeur</td>
+	</tr>
+	</table>
+</aside>
+	</article>
+
+		
+<h2 id="galerie" class="section">
+	Galerie
+	<button class="go-to-section" onclick="goto('galerie')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+	<article class="aligned-content">
+		<div class="content-column">
+			<div class="thumbnails">
+							<a href="/images/projects/event-management-application/cover.png" target="_blank">
+					<figure id="figure-cover">
+						<img width="235" src="/images/projects/event-management-application/cover.png">
+						<figcaption>
+							<b>Fig. 1 :</b>
+							DashBoardGame
+						</figcaption>
+					</figure>
+				</a>
+							<a href="/images/projects/event-management-application/owner-view.png" target="_blank">
+					<figure id="figure-owner-view">
+						<img width="235" src="/images/projects/event-management-application/owner-view.png">
+						<figcaption>
+							<b>Fig. 2 :</b>
+							Vue du gérant
+						</figcaption>
+					</figure>
+				</a>
+						</div>
+		</div>
+	</article>
+	
+		
+			
+<h2 id="voir-aussi" class="section">
+	Voir aussi
+	<button class="go-to-section" onclick="goto('voir-aussi')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+	<article class="aligned-content">
+		<div class="content-column">
+			<div class="thumbnails">
+			<a href="	/projects/chatodyssee.html
+">
+						<img src="/images/projects/chatodyssee/cover.png" width="120">
+						<p>Chatodyssée</p>
+	</a>
+			<a href="	/projects/vortex-network.html
+">
+				<p>Vortex Network</p>
+	</a>
+			<a href="	/projects/dispatch-sorter.html
+">
+				<p>Programme de classification de dépêches</p>
+	</a>
+	</div>
+
+		</div>
+	</article>
+		
+	</section>
+			</div>
+		</main>
+
+		<footer>
+			<div id="socials">
+				<a href="mailto:nolan.dupont@proton.me" target="_blank">					<img class="icon" src="/images/icons/dark/mail.svg" width="20" height="20">
+</a>
+				<a href="https://gitlab.com/nolan-dupont" target="_blank">					<img class="icon" src="/images/icons/dark/gitlab.svg" width="20" height="20">
+</a>
+				<a href="https://github.com/nolan-dupont" target="_blank">					<img class="icon" src="/images/icons/dark/github.svg" width="20" height="20">
+</a>
+			</div>
+			<hr>
+			<div>
+				<p>Lisez le <a href="https://github.com/nolan-dupont/portfolio">code source</a> de cette page sur GitHub.</p>
+			</div>
+			<hr>
+			<div id="copyrights">
+				<p>Les icônes de ce site proviennent do <a href="https://fontawesome.com">FontAwesome 					<img class="icon" src="/images/icons/dark/font-awesome.svg" width="12" height="12">
+</a>.</p>
+			</div>
+		</footer>
+
+			<script src="/scripts/main.js"></script>
+
+			<script src="/scripts/theme.js"></script>
+
+			<script src="/scripts/terminal.js"></script>
+
+			</body>
+
+</html>

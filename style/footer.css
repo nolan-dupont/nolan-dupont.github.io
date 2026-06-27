@@ -1,0 +1,46 @@
+/********************************/
+/***       FOOTER RULES       ***/
+/********************************/
+
+footer {
+	border-bottom: none;
+	display: flex;
+	flex-flow: nowrap row;
+	gap: 20px;
+	justify-content: space-evenly;
+}
+
+footer a {
+	color: var(--text-color);
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+footer div {
+	flex-basis: 30%;
+}
+
+footer hr {
+	border: none;
+	border-left: solid 1px var(--border-color);
+	margin: 0;
+}
+
+footer #socials {
+	display: flex;
+	flex-flow: nowrap row;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+footer #socials a {
+	padding: 10px;
+	padding-bottom: 4px;
+}
+
+footer #socials a:hover {
+	background-color: var(--softer-background-color);
+}

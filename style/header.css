@@ -1,0 +1,116 @@
+/********************************/
+/***       HEADER RULES       ***/
+/********************************/
+
+header {
+	border-bottom: solid 1px var(--border-color);
+	display: flex;
+	flex-flow: nowrap row;
+	justify-content: space-between;
+	margin: 0;
+	position: sticky;
+	top: 0;
+}
+
+header h1 {
+	font-size: 30pt;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+header hr {
+	border: none;
+	border-top: solid 1px var(--border-color);
+	display: none;
+	margin: 20px 0;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header a#banner {
+	flex-basis: 20%;
+}
+
+header nav {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 2;
+	font-size: 13pt;
+	gap: 25px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+header nav a {
+	background-color: var(--background-color);
+	text-align: center;
+}
+
+header nav a:hover {
+	background-color: var(--softer-background-color);
+}
+
+header input {
+	background-color: var(--softer-background-color);
+	border: none;
+}
+
+header nav > * {
+	border-bottom: solid 2px var(--text-color);
+}
+
+header nav > a {
+	padding: 15px;
+	padding-bottom: 10px;
+}
+
+#searchbar {
+	display: flex;
+	/* font-size: 13pt; */
+	justify-content: flex-start;
+	padding: 0;
+}
+
+#searchbar > * {
+	padding: 15px;
+	padding-bottom: 10px;
+}
+
+#search-button {
+	background-color: var(--softer-background-color);
+	border: none;
+	line-height: 0;
+}
+
+#search-button:hover {
+	background-color: var(--background-color);
+	cursor: pointer;
+}
+
+#search-field {
+	display: block;
+	font-size: 13pt;
+}
+
+#search-field:focus {
+	background-color: var(--background-color);
+}
+
+#search-results {
+	background-color: var(--background-color);
+	border: 1px solid var(--border-color);
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: stretch;
+}
+
+.search-result {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 10px;
+}

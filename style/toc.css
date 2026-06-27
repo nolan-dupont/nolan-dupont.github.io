@@ -1,0 +1,69 @@
+/********************************/
+/***     TABLE OF CONTENTS    ***/
+/********************************/
+
+#table-of-contents {
+	position: sticky;
+	top: 128px;
+}
+
+#table-of-contents a {
+	text-decoration: none;
+}
+
+#table-of-contents ul {
+	counter-reset: item;
+	margin: 0;
+	padding: 0 5px;
+}
+
+#table-of-contents ul li {
+	counter-increment: item;
+	list-style-type: none;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#table-of-contents ul li:before {
+	content: counter(item) " ";
+}
+
+#table-of-contents ul li:first-child {
+	margin-top: 15px;
+}
+
+#table-of-contents ul li:last-child {
+	margin-bottom: 0;
+}
+
+#table-of-contents ul ul {
+	border-left: solid 1px var(--border-color);
+	counter-reset: subitem;
+	margin-left: 3px;
+	padding-left: 10px;
+}
+
+#table-of-contents ul ul li {
+	counter-increment: subitem;
+	margin: 5px!important;
+}
+
+#table-of-contents ul ul li:before {
+	content: counter(item) "." counter(subitem) " ";
+}
+
+#table-of-contents ul ul ul {
+	counter-reset: subsubitem;
+	padding: 0;
+	margin-left: 6px;
+	padding-left: 3px;
+}
+
+#table-of-contents ul ul ul li {
+	counter-increment: subsubitem;
+	margin: 5px!important;
+}
+
+#table-of-contents ul ul ul li:before {
+	content: counter(item) "." counter(subitem) "." counter(subsubitem) " ";
+}

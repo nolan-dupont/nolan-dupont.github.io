@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio - Me Contacter</title>
+			<link rel="stylesheet" href="/style/header.css">
+
+			<link rel="stylesheet" href="/style/main.css">
+
+			<link rel="stylesheet" href="/style/toc.css">
+
+			<link rel="stylesheet" href="/style/footer.css">
+
+			<link rel="stylesheet" href="/style/terminal.css">
+
+			<link rel="stylesheet" href="/style/responsive.css">
+
+			<link rel="stylesheet" href="/style/contact.css">
+
+		<title>Me Contacter</title>
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<h1><a href="	/index.html
+">Portfolio</a></h1>
+				<button id="main-burger-button" class="menu-control" onclick="showMainMenu()">					<img class="icon" src="/images/icons/dark/menu.svg" width="" height="">
+</button>
+				<button id="hide-main-menu" class="menu-control" onclick="hideMainMenu()">					<img class="icon" src="/images/icons/dark/xmark.svg" width="" height="">
+</button>
+			</div>
+			<hr id="main-menu-separator">
+			<nav id="main-menu">
+				<form id="searchbar" action="	/search.html
+" method="get">
+					<input id="search-field" name="s" type="search" placeholder="Chercher des projets...">
+					<button id="search-button" type="submit">					<img class="icon" src="/images/icons/dark/magnifying-glass.svg" width="20" height="20">
+</button>
+					<div id="search-results">
+						<p id="no-results">Aucun projet trouvé</p>
+					</div>
+				</form>
+
+				<a href="	/index.html
+">Accueil</a>
+				<a href="	/projects.html
+">Projets</a>
+				<a href="	/skills.html
+">Compétences</a>
+				<a class="contact-me" href="	/contact.html
+">Me contacter</a>
+			</nav>
+		</header>
+
+		<main>
+			<div id="title">
+				<!--  -->
+				<h1>Me Contacter</h1>
+				<div id="page-controls">
+					<button id="dark-theme-toggle" class="theme-toggle">					<img src="/images/icons/moon-solid.svg" width="20" height="20">
+</button>
+					<button id="light-theme-toggle" class="theme-toggle">					<img src="/images/icons/sun-regular.svg" width="20" height="20">
+</button>
+					<select id="language" name="language">
+													<option
+								value="fr"
+								onclick="window.location.href = '/contact.html'"
+								selected>
+								🇫🇷
+							</option>
+											</select>
+				</div>
+			</div>
+
+			<hr>
+
+			<div id="content">
+				<form class="contacts" action="mailto:nolan.dupont@proton.me" method="get" enctype="text/plain">
+	
+<h2 id="me-contacter-par-e-mail" class="section">
+	Me contacter par e-mail
+	<button class="go-to-section" onclick="goto('me-contacter-par-e-mail')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+
+	<div class="field">
+		<label for="email">Addresse e-mail* :</label>
+		<input name="email" type="email" placeholder="johndoe@mailserver.com" required>
+	</div>
+
+	<div class="field">
+		<label for="subject">Objet* :</label>
+		<input name="subject" type="text" placeholder="Message important..." required>
+	</div>
+
+	<div class="field">
+		<label for="body">Contenu* :</label>
+		<textarea
+			name="body"
+			placeholder="Bonjour, mon nom est John Doe et..."
+			required></textarea>
+	</div>
+
+	<input id="send" name="send" type="submit" value="Send">
+</form>
+
+<div class="contacts">
+	
+<h2 id="mes-comptes-gitlab-et-github" class="section">
+	Mes comptes GitLab et GitHub
+	<button class="go-to-section" onclick="goto('mes-comptes-gitlab-et-github')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+	<div id="accounts">
+					<a href="https://gitlab.com/nolan-dupont/" target="_blank">
+									<img class="icon" src="/images/icons/dark/gitlab.svg" width="40" height="40">
+
+				<p>GitLab</p>
+			</a>
+					<a href="https://github.com/nolan-dupont/" target="_blank">
+									<img class="icon" src="/images/icons/dark/github.svg" width="40" height="40">
+
+				<p>GitHub</p>
+			</a>
+			</div>
+</div>
+			</div>
+		</main>
+
+		<footer>
+			<div id="socials">
+				<a href="mailto:nolan.dupont@proton.me" target="_blank">					<img class="icon" src="/images/icons/dark/mail.svg" width="20" height="20">
+</a>
+				<a href="https://gitlab.com/nolan-dupont" target="_blank">					<img class="icon" src="/images/icons/dark/gitlab.svg" width="20" height="20">
+</a>
+				<a href="https://github.com/nolan-dupont" target="_blank">					<img class="icon" src="/images/icons/dark/github.svg" width="20" height="20">
+</a>
+			</div>
+			<hr>
+			<div>
+				<p>Lisez le <a href="https://github.com/nolan-dupont/portfolio">code source</a> de cette page sur GitHub.</p>
+			</div>
+			<hr>
+			<div id="copyrights">
+				<p>Les icônes de ce site proviennent do <a href="https://fontawesome.com">FontAwesome 					<img class="icon" src="/images/icons/dark/font-awesome.svg" width="12" height="12">
+</a>.</p>
+			</div>
+		</footer>
+
+			<script src="/scripts/main.js"></script>
+
+			<script src="/scripts/theme.js"></script>
+
+			<script src="/scripts/terminal.js"></script>
+
+			<script src="/scripts/contact.js"></script>
+
+	</body>
+
+</html>

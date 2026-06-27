@@ -1,0 +1,1177 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio - Chercher des projets</title>
+			<link rel="stylesheet" href="/style/header.css">
+
+			<link rel="stylesheet" href="/style/main.css">
+
+			<link rel="stylesheet" href="/style/toc.css">
+
+			<link rel="stylesheet" href="/style/footer.css">
+
+			<link rel="stylesheet" href="/style/terminal.css">
+
+			<link rel="stylesheet" href="/style/responsive.css">
+
+			<link rel="stylesheet" href="/style/search.css">
+
+		<title>Chercher des projets</title>
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<h1><a href="	/index.html
+">Portfolio</a></h1>
+				<button id="main-burger-button" class="menu-control" onclick="showMainMenu()">					<img class="icon" src="/images/icons/dark/menu.svg" width="" height="">
+</button>
+				<button id="hide-main-menu" class="menu-control" onclick="hideMainMenu()">					<img class="icon" src="/images/icons/dark/xmark.svg" width="" height="">
+</button>
+			</div>
+			<hr id="main-menu-separator">
+			<nav id="main-menu">
+				<form id="searchbar" action="	/search.html
+" method="get">
+					<input id="search-field" name="s" type="search" placeholder="Chercher des projets...">
+					<button id="search-button" type="submit">					<img class="icon" src="/images/icons/dark/magnifying-glass.svg" width="20" height="20">
+</button>
+					<div id="search-results">
+						<p id="no-results">Aucun projet trouvé</p>
+					</div>
+				</form>
+
+				<a href="	/index.html
+">Accueil</a>
+				<a href="	/projects.html
+">Projets</a>
+				<a href="	/skills.html
+">Compétences</a>
+				<a class="contact-me" href="	/contact.html
+">Me contacter</a>
+			</nav>
+		</header>
+
+		<main>
+			<div id="title">
+				<!--  -->
+				<h1>Chercher des projets</h1>
+				<div id="page-controls">
+					<button id="dark-theme-toggle" class="theme-toggle">					<img src="/images/icons/moon-solid.svg" width="20" height="20">
+</button>
+					<button id="light-theme-toggle" class="theme-toggle">					<img src="/images/icons/sun-regular.svg" width="20" height="20">
+</button>
+					<select id="language" name="language">
+													<option
+								value="fr"
+								onclick="window.location.href = '/search.html'"
+								selected>
+								🇫🇷
+							</option>
+											</select>
+				</div>
+			</div>
+
+			<hr>
+
+			<div id="content">
+					<aside id="filters-menu" class="side-menu">
+		<h2>Compétences</h2>
+		<h3>Sélectionnées</h3>
+			<div id="selected-skills" class=" tag-list">
+		</div>
+
+		<h3>Disponibles</h3>
+			<div id="available-skills" class=" tag-list">
+				<a class="tag tag-application-development"
+		name="application-development"
+		href="	/search.html
+?tag=Développement d&#039;applications"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/code.svg" width="10" height="10">
+
+				Développement d&#039;applications
+	</a>
+
+				<a class="tag tag-programs-optimization"
+		name="programs-optimization"
+		href="	/search.html
+?tag=Optimisation de programmes"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/gear.svg" width="10" height="10">
+
+				Optimisation de programmes
+	</a>
+
+				<a class="tag tag-system-administration"
+		name="system-administration"
+		href="	/search.html
+?tag=Administration système"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/terminal.svg" width="10" height="10">
+
+				Administration système
+	</a>
+
+				<a class="tag tag-data-science"
+		name="data-science"
+		href="	/search.html
+?tag=Science des données"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/database.svg" width="10" height="10">
+
+				Science des données
+	</a>
+
+				<a class="tag tag-project-management"
+		name="project-management"
+		href="	/search.html
+?tag=Gestion de projets"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/list-check.svg" width="10" height="10">
+
+				Gestion de projets
+	</a>
+
+				<a class="tag tag-teamwork"
+		name="teamwork"
+		href="	/search.html
+?tag=Travail d&#039;équipe"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/people-group.svg" width="10" height="10">
+
+				Travail d&#039;équipe
+	</a>
+
+		</div>
+
+		<h2>Étiquettes</h2>
+		<h3>Sélectionnés</h3>
+			<div id="selected-tags" class=" tag-list">
+		</div>
+
+		<h3>Disponibles</h3>
+			<div id="available-tags" class=" tag-list">
+				<a class="tag tag-algorithmes"
+		name="algorithmes"
+		href="	/search.html
+?tag=Algorithmes"
+		style="background-color: rgb(255, 255, 0); border-color: rgb(153, 153, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 0)';">
+				Algorithmes
+	</a>
+
+				<a class="tag tag-réseau"
+		name="réseau"
+		href="	/search.html
+?tag=Réseau"
+		style="background-color: rgb(255, 153, 51); border-color: rgb(153, 92, 31);"
+		onmouseover="this.style.backgroundColor='rgb(217, 130, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 153, 51)';">
+				Réseau
+	</a>
+
+				<a class="tag tag-web"
+		name="web"
+		href="	/search.html
+?tag=Web"
+		style="background-color: rgb(51, 204, 255); border-color: rgb(31, 122, 153);"
+		onmouseover="this.style.backgroundColor='rgb(43, 173, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(51, 204, 255)';">
+				Web
+	</a>
+
+				<a class="tag tag-html/css"
+		name="html/css"
+		href="	/search.html
+?tag=HTML/CSS"
+		style="background-color: rgb(238, 68, 102); border-color: rgb(143, 41, 61);"
+		onmouseover="this.style.backgroundColor='rgb(202, 58, 87)';" 
+		onmouseout="this.style.backgroundColor='rgb(238, 68, 102)';">
+				HTML/CSS
+	</a>
+
+				<a class="tag tag-java"
+		name="java"
+		href="	/search.html
+?tag=Java"
+		style="background-color: rgb(255, 102, 0); border-color: rgb(153, 61, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 87, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 102, 0)';">
+				Java
+	</a>
+
+				<a class="tag tag-latex"
+		name="latex"
+		href="	/search.html
+?tag=LaTeX"
+		style="background-color: rgb(153, 255, 51); border-color: rgb(92, 153, 31);"
+		onmouseover="this.style.backgroundColor='rgb(130, 217, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(153, 255, 51)';">
+				LaTeX
+	</a>
+
+				<a class="tag tag-php"
+		name="php"
+		href="	/search.html
+?tag=PHP"
+		style="background-color: rgb(102, 102, 255); border-color: rgb(61, 61, 153);"
+		onmouseover="this.style.backgroundColor='rgb(87, 87, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(102, 102, 255)';">
+				PHP
+	</a>
+
+				<a class="tag tag-python"
+		name="python"
+		href="	/search.html
+?tag=Python"
+		style="background-color: rgb(51, 153, 255); border-color: rgb(31, 92, 153);"
+		onmouseover="this.style.backgroundColor='rgb(43, 130, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(51, 153, 255)';">
+				Python
+	</a>
+
+				<a class="tag tag-shell"
+		name="shell"
+		href="	/search.html
+?tag=Shell"
+		style="background-color: rgb(255, 102, 255); border-color: rgb(153, 61, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 87, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 102, 255)';">
+				Shell
+	</a>
+
+				<a class="tag tag-sql"
+		name="sql"
+		href="	/search.html
+?tag=SQL"
+		style="background-color: rgb(255, 99, 71); border-color: rgb(153, 59, 43);"
+		onmouseover="this.style.backgroundColor='rgb(217, 84, 60)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 99, 71)';">
+				SQL
+	</a>
+
+				<a class="tag tag-apache"
+		name="apache"
+		href="	/search.html
+?tag=Apache"
+		style="background-color: rgb(102, 255, 153); border-color: rgb(61, 153, 92);"
+		onmouseover="this.style.backgroundColor='rgb(87, 217, 130)';" 
+		onmouseout="this.style.backgroundColor='rgb(102, 255, 153)';">
+				Apache
+	</a>
+
+				<a class="tag tag-debian"
+		name="debian"
+		href="	/search.html
+?tag=Debian"
+		style="background-color: rgb(255, 51, 204); border-color: rgb(153, 31, 122);"
+		onmouseover="this.style.backgroundColor='rgb(217, 43, 173)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 51, 204)';">
+				Debian
+	</a>
+
+				<a class="tag tag-javafx"
+		name="javafx"
+		href="	/search.html
+?tag=JavaFX"
+		style="background-color: rgb(255, 204, 102); border-color: rgb(153, 122, 61);"
+		onmouseover="this.style.backgroundColor='rgb(217, 173, 87)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 204, 102)';">
+				JavaFX
+	</a>
+
+				<a class="tag tag-ldap"
+		name="ldap"
+		href="	/search.html
+?tag=LDAP"
+		style="background-color: rgb(255, 153, 102); border-color: rgb(153, 92, 61);"
+		onmouseover="this.style.backgroundColor='rgb(217, 130, 87)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 153, 102)';">
+				LDAP
+	</a>
+
+				<a class="tag tag-linux"
+		name="linux"
+		href="	/search.html
+?tag=Linux"
+		style="background-color: rgb(255, 215, 0); border-color: rgb(153, 129, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 183, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 215, 0)';">
+				Linux
+	</a>
+
+				<a class="tag tag-postgresql"
+		name="postgresql"
+		href="	/search.html
+?tag=PostgreSQL"
+		style="background-color: rgb(32, 178, 170); border-color: rgb(19, 107, 102);"
+		onmouseover="this.style.backgroundColor='rgb(27, 151, 145)';" 
+		onmouseout="this.style.backgroundColor='rgb(32, 178, 170)';">
+				PostgreSQL
+	</a>
+
+				<a class="tag tag-samba"
+		name="samba"
+		href="	/search.html
+?tag=Samba"
+		style="background-color: rgb(255, 51, 51); border-color: rgb(153, 31, 31);"
+		onmouseover="this.style.backgroundColor='rgb(217, 43, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 51, 51)';">
+				Samba
+	</a>
+
+				<a class="tag tag-symfony"
+		name="symfony"
+		href="	/search.html
+?tag=Symfony"
+		style="background-color: rgb(50, 205, 50); border-color: rgb(30, 123, 30);"
+		onmouseover="this.style.backgroundColor='rgb(43, 174, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(50, 205, 50)';">
+				Symfony
+	</a>
+
+				<a class="tag tag-twig"
+		name="twig"
+		href="	/search.html
+?tag=Twig"
+		style="background-color: rgb(209, 134, 97); border-color: rgb(125, 80, 58);"
+		onmouseover="this.style.backgroundColor='rgb(178, 114, 82)';" 
+		onmouseout="this.style.backgroundColor='rgb(209, 134, 97)';">
+				Twig
+	</a>
+
+		</div>
+
+	</aside>
+
+	<section>
+		<table id="projects">
+			<tr id="projects-header">
+				<th>Nom du projet</th>
+				<th>Compétences</th>
+				<th>Étiquettes</th>
+			</tr>
+							<tr name="dispatch-sorter">
+					<td><b><a href="	/projects/dispatch-sorter.html
+">Programme de classification de dépêches</a></b></td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-application-development"
+		name="application-development"
+		href="	/search.html
+?tag=Développement d&#039;applications"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/code.svg" width="10" height="10">
+
+				Développement d&#039;applications
+	</a>
+
+				<a class="tag tag-programs-optimization"
+		name="programs-optimization"
+		href="	/search.html
+?tag=Optimisation de programmes"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/gear.svg" width="10" height="10">
+
+				Optimisation de programmes
+	</a>
+
+		</div>
+</td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-algorithmes"
+		name="algorithmes"
+		href="	/search.html
+?tag=Algorithmes"
+		style="background-color: rgb(255, 255, 0); border-color: rgb(153, 153, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 0)';">
+				Algorithmes
+	</a>
+
+				<a class="tag tag-java"
+		name="java"
+		href="	/search.html
+?tag=Java"
+		style="background-color: rgb(255, 102, 0); border-color: rgb(153, 61, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 87, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 102, 0)';">
+				Java
+	</a>
+
+		</div>
+</td>
+				</tr>
+							<tr name="development-environment-setup">
+					<td><b><a href="	/projects/development-environment-setup.html
+">Mise en place d&#039;un environnement de développement</a></b></td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-system-administration"
+		name="system-administration"
+		href="	/search.html
+?tag=Administration système"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/terminal.svg" width="10" height="10">
+
+				Administration système
+	</a>
+
+		</div>
+</td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-linux"
+		name="linux"
+		href="	/search.html
+?tag=Linux"
+		style="background-color: rgb(255, 215, 0); border-color: rgb(153, 129, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 183, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 215, 0)';">
+				Linux
+	</a>
+
+				<a class="tag tag-debian"
+		name="debian"
+		href="	/search.html
+?tag=Debian"
+		style="background-color: rgb(255, 51, 204); border-color: rgb(153, 31, 122);"
+		onmouseover="this.style.backgroundColor='rgb(217, 43, 173)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 51, 204)';">
+				Debian
+	</a>
+
+		</div>
+</td>
+				</tr>
+							<tr name="database-creation">
+					<td><b><a href="	/projects/database-creation.html
+">Création d&#039;une base de données</a></b></td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-data-science"
+		name="data-science"
+		href="	/search.html
+?tag=Science des données"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/database.svg" width="10" height="10">
+
+				Science des données
+	</a>
+
+		</div>
+</td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-sql"
+		name="sql"
+		href="	/search.html
+?tag=SQL"
+		style="background-color: rgb(255, 99, 71); border-color: rgb(153, 59, 43);"
+		onmouseover="this.style.backgroundColor='rgb(217, 84, 60)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 99, 71)';">
+				SQL
+	</a>
+
+		</div>
+</td>
+				</tr>
+							<tr name="static-enterprise-website">
+					<td><b><a href="	/projects/static-enterprise-website.html
+">Site web statique pour une entreprise</a></b></td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-project-management"
+		name="project-management"
+		href="	/search.html
+?tag=Gestion de projets"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/list-check.svg" width="10" height="10">
+
+				Gestion de projets
+	</a>
+
+				<a class="tag tag-teamwork"
+		name="teamwork"
+		href="	/search.html
+?tag=Travail d&#039;équipe"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/people-group.svg" width="10" height="10">
+
+				Travail d&#039;équipe
+	</a>
+
+		</div>
+</td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-web"
+		name="web"
+		href="	/search.html
+?tag=Web"
+		style="background-color: rgb(51, 204, 255); border-color: rgb(31, 122, 153);"
+		onmouseover="this.style.backgroundColor='rgb(43, 173, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(51, 204, 255)';">
+				Web
+	</a>
+
+				<a class="tag tag-html/css"
+		name="html/css"
+		href="	/search.html
+?tag=HTML/CSS"
+		style="background-color: rgb(238, 68, 102); border-color: rgb(143, 41, 61);"
+		onmouseover="this.style.backgroundColor='rgb(202, 58, 87)';" 
+		onmouseout="this.style.backgroundColor='rgb(238, 68, 102)';">
+				HTML/CSS
+	</a>
+
+		</div>
+</td>
+				</tr>
+							<tr name="event-management-application">
+					<td><b><a href="	/projects/event-management-application.html
+">Application de gestion d&#039;évènements</a></b></td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-application-development"
+		name="application-development"
+		href="	/search.html
+?tag=Développement d&#039;applications"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/code.svg" width="10" height="10">
+
+				Développement d&#039;applications
+	</a>
+
+				<a class="tag tag-programs-optimization"
+		name="programs-optimization"
+		href="	/search.html
+?tag=Optimisation de programmes"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/gear.svg" width="10" height="10">
+
+				Optimisation de programmes
+	</a>
+
+				<a class="tag tag-project-management"
+		name="project-management"
+		href="	/search.html
+?tag=Gestion de projets"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/list-check.svg" width="10" height="10">
+
+				Gestion de projets
+	</a>
+
+				<a class="tag tag-teamwork"
+		name="teamwork"
+		href="	/search.html
+?tag=Travail d&#039;équipe"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/people-group.svg" width="10" height="10">
+
+				Travail d&#039;équipe
+	</a>
+
+		</div>
+</td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-java"
+		name="java"
+		href="	/search.html
+?tag=Java"
+		style="background-color: rgb(255, 102, 0); border-color: rgb(153, 61, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 87, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 102, 0)';">
+				Java
+	</a>
+
+				<a class="tag tag-javafx"
+		name="javafx"
+		href="	/search.html
+?tag=JavaFX"
+		style="background-color: rgb(255, 204, 102); border-color: rgb(153, 122, 61);"
+		onmouseover="this.style.backgroundColor='rgb(217, 173, 87)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 204, 102)';">
+				JavaFX
+	</a>
+
+		</div>
+</td>
+				</tr>
+							<tr name="debian-12-server-installation-guide">
+					<td><b><a href="	/projects/debian-12-server-installation-guide.html
+">Guide d&#039;installation d&#039;un serveur Debian 12</a></b></td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-system-administration"
+		name="system-administration"
+		href="	/search.html
+?tag=Administration système"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/terminal.svg" width="10" height="10">
+
+				Administration système
+	</a>
+
+		</div>
+</td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-linux"
+		name="linux"
+		href="	/search.html
+?tag=Linux"
+		style="background-color: rgb(255, 215, 0); border-color: rgb(153, 129, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 183, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 215, 0)';">
+				Linux
+	</a>
+
+				<a class="tag tag-debian"
+		name="debian"
+		href="	/search.html
+?tag=Debian"
+		style="background-color: rgb(255, 51, 204); border-color: rgb(153, 31, 122);"
+		onmouseover="this.style.backgroundColor='rgb(217, 43, 173)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 51, 204)';">
+				Debian
+	</a>
+
+				<a class="tag tag-latex"
+		name="latex"
+		href="	/search.html
+?tag=LaTeX"
+		style="background-color: rgb(153, 255, 51); border-color: rgb(92, 153, 31);"
+		onmouseover="this.style.backgroundColor='rgb(130, 217, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(153, 255, 51)';">
+				LaTeX
+	</a>
+
+				<a class="tag tag-php"
+		name="php"
+		href="	/search.html
+?tag=PHP"
+		style="background-color: rgb(102, 102, 255); border-color: rgb(61, 61, 153);"
+		onmouseover="this.style.backgroundColor='rgb(87, 87, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(102, 102, 255)';">
+				PHP
+	</a>
+
+				<a class="tag tag-apache"
+		name="apache"
+		href="	/search.html
+?tag=Apache"
+		style="background-color: rgb(102, 255, 153); border-color: rgb(61, 153, 92);"
+		onmouseover="this.style.backgroundColor='rgb(87, 217, 130)';" 
+		onmouseout="this.style.backgroundColor='rgb(102, 255, 153)';">
+				Apache
+	</a>
+
+				<a class="tag tag-postgresql"
+		name="postgresql"
+		href="	/search.html
+?tag=PostgreSQL"
+		style="background-color: rgb(32, 178, 170); border-color: rgb(19, 107, 102);"
+		onmouseover="this.style.backgroundColor='rgb(27, 151, 145)';" 
+		onmouseout="this.style.backgroundColor='rgb(32, 178, 170)';">
+				PostgreSQL
+	</a>
+
+		</div>
+</td>
+				</tr>
+							<tr name="database-exploitation">
+					<td><b><a href="	/projects/database-exploitation.html
+">Exploitation d&#039;une base de données</a></b></td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-data-science"
+		name="data-science"
+		href="	/search.html
+?tag=Science des données"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/database.svg" width="10" height="10">
+
+				Science des données
+	</a>
+
+		</div>
+</td>
+					<td>	<div id="" class=" tag-list">
+		</div>
+</td>
+				</tr>
+							<tr name="chatodyssee">
+					<td><b><a href="	/projects/chatodyssee.html
+">Chatodyssée</a></b></td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-application-development"
+		name="application-development"
+		href="	/search.html
+?tag=Développement d&#039;applications"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/code.svg" width="10" height="10">
+
+				Développement d&#039;applications
+	</a>
+
+				<a class="tag tag-programs-optimization"
+		name="programs-optimization"
+		href="	/search.html
+?tag=Optimisation de programmes"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/gear.svg" width="10" height="10">
+
+				Optimisation de programmes
+	</a>
+
+				<a class="tag tag-system-administration"
+		name="system-administration"
+		href="	/search.html
+?tag=Administration système"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/terminal.svg" width="10" height="10">
+
+				Administration système
+	</a>
+
+				<a class="tag tag-data-science"
+		name="data-science"
+		href="	/search.html
+?tag=Science des données"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/database.svg" width="10" height="10">
+
+				Science des données
+	</a>
+
+				<a class="tag tag-project-management"
+		name="project-management"
+		href="	/search.html
+?tag=Gestion de projets"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/list-check.svg" width="10" height="10">
+
+				Gestion de projets
+	</a>
+
+				<a class="tag tag-teamwork"
+		name="teamwork"
+		href="	/search.html
+?tag=Travail d&#039;équipe"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/people-group.svg" width="10" height="10">
+
+				Travail d&#039;équipe
+	</a>
+
+		</div>
+</td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-web"
+		name="web"
+		href="	/search.html
+?tag=Web"
+		style="background-color: rgb(51, 204, 255); border-color: rgb(31, 122, 153);"
+		onmouseover="this.style.backgroundColor='rgb(43, 173, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(51, 204, 255)';">
+				Web
+	</a>
+
+				<a class="tag tag-html/css"
+		name="html/css"
+		href="	/search.html
+?tag=HTML/CSS"
+		style="background-color: rgb(238, 68, 102); border-color: rgb(143, 41, 61);"
+		onmouseover="this.style.backgroundColor='rgb(202, 58, 87)';" 
+		onmouseout="this.style.backgroundColor='rgb(238, 68, 102)';">
+				HTML/CSS
+	</a>
+
+				<a class="tag tag-php"
+		name="php"
+		href="	/search.html
+?tag=PHP"
+		style="background-color: rgb(102, 102, 255); border-color: rgb(61, 61, 153);"
+		onmouseover="this.style.backgroundColor='rgb(87, 87, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(102, 102, 255)';">
+				PHP
+	</a>
+
+				<a class="tag tag-shell"
+		name="shell"
+		href="	/search.html
+?tag=Shell"
+		style="background-color: rgb(255, 102, 255); border-color: rgb(153, 61, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 87, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 102, 255)';">
+				Shell
+	</a>
+
+				<a class="tag tag-sql"
+		name="sql"
+		href="	/search.html
+?tag=SQL"
+		style="background-color: rgb(255, 99, 71); border-color: rgb(153, 59, 43);"
+		onmouseover="this.style.backgroundColor='rgb(217, 84, 60)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 99, 71)';">
+				SQL
+	</a>
+
+				<a class="tag tag-apache"
+		name="apache"
+		href="	/search.html
+?tag=Apache"
+		style="background-color: rgb(102, 255, 153); border-color: rgb(61, 153, 92);"
+		onmouseover="this.style.backgroundColor='rgb(87, 217, 130)';" 
+		onmouseout="this.style.backgroundColor='rgb(102, 255, 153)';">
+				Apache
+	</a>
+
+				<a class="tag tag-debian"
+		name="debian"
+		href="	/search.html
+?tag=Debian"
+		style="background-color: rgb(255, 51, 204); border-color: rgb(153, 31, 122);"
+		onmouseover="this.style.backgroundColor='rgb(217, 43, 173)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 51, 204)';">
+				Debian
+	</a>
+
+				<a class="tag tag-linux"
+		name="linux"
+		href="	/search.html
+?tag=Linux"
+		style="background-color: rgb(255, 215, 0); border-color: rgb(153, 129, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 183, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 215, 0)';">
+				Linux
+	</a>
+
+				<a class="tag tag-postgresql"
+		name="postgresql"
+		href="	/search.html
+?tag=PostgreSQL"
+		style="background-color: rgb(32, 178, 170); border-color: rgb(19, 107, 102);"
+		onmouseover="this.style.backgroundColor='rgb(27, 151, 145)';" 
+		onmouseout="this.style.backgroundColor='rgb(32, 178, 170)';">
+				PostgreSQL
+	</a>
+
+		</div>
+</td>
+				</tr>
+							<tr name="vortex-network">
+					<td><b><a href="	/projects/vortex-network.html
+">Vortex Network</a></b></td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-application-development"
+		name="application-development"
+		href="	/search.html
+?tag=Développement d&#039;applications"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/code.svg" width="10" height="10">
+
+				Développement d&#039;applications
+	</a>
+
+				<a class="tag tag-programs-optimization"
+		name="programs-optimization"
+		href="	/search.html
+?tag=Optimisation de programmes"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/gear.svg" width="10" height="10">
+
+				Optimisation de programmes
+	</a>
+
+				<a class="tag tag-system-administration"
+		name="system-administration"
+		href="	/search.html
+?tag=Administration système"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/terminal.svg" width="10" height="10">
+
+				Administration système
+	</a>
+
+				<a class="tag tag-data-science"
+		name="data-science"
+		href="	/search.html
+?tag=Science des données"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/database.svg" width="10" height="10">
+
+				Science des données
+	</a>
+
+				<a class="tag tag-project-management"
+		name="project-management"
+		href="	/search.html
+?tag=Gestion de projets"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/list-check.svg" width="10" height="10">
+
+				Gestion de projets
+	</a>
+
+				<a class="tag tag-teamwork"
+		name="teamwork"
+		href="	/search.html
+?tag=Travail d&#039;équipe"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/people-group.svg" width="10" height="10">
+
+				Travail d&#039;équipe
+	</a>
+
+		</div>
+</td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-réseau"
+		name="réseau"
+		href="	/search.html
+?tag=Réseau"
+		style="background-color: rgb(255, 153, 51); border-color: rgb(153, 92, 31);"
+		onmouseover="this.style.backgroundColor='rgb(217, 130, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 153, 51)';">
+				Réseau
+	</a>
+
+				<a class="tag tag-latex"
+		name="latex"
+		href="	/search.html
+?tag=LaTeX"
+		style="background-color: rgb(153, 255, 51); border-color: rgb(92, 153, 31);"
+		onmouseover="this.style.backgroundColor='rgb(130, 217, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(153, 255, 51)';">
+				LaTeX
+	</a>
+
+				<a class="tag tag-shell"
+		name="shell"
+		href="	/search.html
+?tag=Shell"
+		style="background-color: rgb(255, 102, 255); border-color: rgb(153, 61, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 87, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 102, 255)';">
+				Shell
+	</a>
+
+				<a class="tag tag-python"
+		name="python"
+		href="	/search.html
+?tag=Python"
+		style="background-color: rgb(51, 153, 255); border-color: rgb(31, 92, 153);"
+		onmouseover="this.style.backgroundColor='rgb(43, 130, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(51, 153, 255)';">
+				Python
+	</a>
+
+				<a class="tag tag-apache"
+		name="apache"
+		href="	/search.html
+?tag=Apache"
+		style="background-color: rgb(102, 255, 153); border-color: rgb(61, 153, 92);"
+		onmouseover="this.style.backgroundColor='rgb(87, 217, 130)';" 
+		onmouseout="this.style.backgroundColor='rgb(102, 255, 153)';">
+				Apache
+	</a>
+
+				<a class="tag tag-debian"
+		name="debian"
+		href="	/search.html
+?tag=Debian"
+		style="background-color: rgb(255, 51, 204); border-color: rgb(153, 31, 122);"
+		onmouseover="this.style.backgroundColor='rgb(217, 43, 173)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 51, 204)';">
+				Debian
+	</a>
+
+				<a class="tag tag-ldap"
+		name="ldap"
+		href="	/search.html
+?tag=LDAP"
+		style="background-color: rgb(255, 153, 102); border-color: rgb(153, 92, 61);"
+		onmouseover="this.style.backgroundColor='rgb(217, 130, 87)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 153, 102)';">
+				LDAP
+	</a>
+
+				<a class="tag tag-linux"
+		name="linux"
+		href="	/search.html
+?tag=Linux"
+		style="background-color: rgb(255, 215, 0); border-color: rgb(153, 129, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 183, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 215, 0)';">
+				Linux
+	</a>
+
+				<a class="tag tag-samba"
+		name="samba"
+		href="	/search.html
+?tag=Samba"
+		style="background-color: rgb(255, 51, 51); border-color: rgb(153, 31, 31);"
+		onmouseover="this.style.backgroundColor='rgb(217, 43, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 51, 51)';">
+				Samba
+	</a>
+
+		</div>
+</td>
+				</tr>
+							<tr name="portfolio">
+					<td><b><a href="	/projects/portfolio.html
+">Portfolio</a></b></td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-application-development"
+		name="application-development"
+		href="	/search.html
+?tag=Développement d&#039;applications"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/code.svg" width="10" height="10">
+
+				Développement d&#039;applications
+	</a>
+
+		</div>
+</td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-web"
+		name="web"
+		href="	/search.html
+?tag=Web"
+		style="background-color: rgb(51, 204, 255); border-color: rgb(31, 122, 153);"
+		onmouseover="this.style.backgroundColor='rgb(43, 173, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(51, 204, 255)';">
+				Web
+	</a>
+
+				<a class="tag tag-html/css"
+		name="html/css"
+		href="	/search.html
+?tag=HTML/CSS"
+		style="background-color: rgb(238, 68, 102); border-color: rgb(143, 41, 61);"
+		onmouseover="this.style.backgroundColor='rgb(202, 58, 87)';" 
+		onmouseout="this.style.backgroundColor='rgb(238, 68, 102)';">
+				HTML/CSS
+	</a>
+
+				<a class="tag tag-php"
+		name="php"
+		href="	/search.html
+?tag=PHP"
+		style="background-color: rgb(102, 102, 255); border-color: rgb(61, 61, 153);"
+		onmouseover="this.style.backgroundColor='rgb(87, 87, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(102, 102, 255)';">
+				PHP
+	</a>
+
+				<a class="tag tag-twig"
+		name="twig"
+		href="	/search.html
+?tag=Twig"
+		style="background-color: rgb(209, 134, 97); border-color: rgb(125, 80, 58);"
+		onmouseover="this.style.backgroundColor='rgb(178, 114, 82)';" 
+		onmouseout="this.style.backgroundColor='rgb(209, 134, 97)';">
+				Twig
+	</a>
+
+		</div>
+</td>
+				</tr>
+					</table>
+	</section>
+			</div>
+		</main>
+
+		<footer>
+			<div id="socials">
+				<a href="mailto:nolan.dupont@proton.me" target="_blank">					<img class="icon" src="/images/icons/dark/mail.svg" width="20" height="20">
+</a>
+				<a href="https://gitlab.com/nolan-dupont" target="_blank">					<img class="icon" src="/images/icons/dark/gitlab.svg" width="20" height="20">
+</a>
+				<a href="https://github.com/nolan-dupont" target="_blank">					<img class="icon" src="/images/icons/dark/github.svg" width="20" height="20">
+</a>
+			</div>
+			<hr>
+			<div>
+				<p>Lisez le <a href="https://github.com/nolan-dupont/portfolio">code source</a> de cette page sur GitHub.</p>
+			</div>
+			<hr>
+			<div id="copyrights">
+				<p>Les icônes de ce site proviennent do <a href="https://fontawesome.com">FontAwesome 					<img class="icon" src="/images/icons/dark/font-awesome.svg" width="12" height="12">
+</a>.</p>
+			</div>
+		</footer>
+
+			<script src="/scripts/main.js"></script>
+
+			<script src="/scripts/theme.js"></script>
+
+			<script src="/scripts/terminal.js"></script>
+
+			<script src="/scripts/search.js"></script>
+
+	</body>
+
+</html>

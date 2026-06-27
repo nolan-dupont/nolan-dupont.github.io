@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio - Administration système</title>
+			<link rel="stylesheet" href="/style/header.css">
+
+			<link rel="stylesheet" href="/style/main.css">
+
+			<link rel="stylesheet" href="/style/toc.css">
+
+			<link rel="stylesheet" href="/style/footer.css">
+
+			<link rel="stylesheet" href="/style/terminal.css">
+
+			<link rel="stylesheet" href="/style/responsive.css">
+
+						<title>Administration système</title>
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<h1><a href="	/index.html
+">Portfolio</a></h1>
+				<button id="main-burger-button" class="menu-control" onclick="showMainMenu()">					<img class="icon" src="/images/icons/dark/menu.svg" width="" height="">
+</button>
+				<button id="hide-main-menu" class="menu-control" onclick="hideMainMenu()">					<img class="icon" src="/images/icons/dark/xmark.svg" width="" height="">
+</button>
+			</div>
+			<hr id="main-menu-separator">
+			<nav id="main-menu">
+				<form id="searchbar" action="	/search.html
+" method="get">
+					<input id="search-field" name="s" type="search" placeholder="Chercher des projets...">
+					<button id="search-button" type="submit">					<img class="icon" src="/images/icons/dark/magnifying-glass.svg" width="20" height="20">
+</button>
+					<div id="search-results">
+						<p id="no-results">Aucun projet trouvé</p>
+					</div>
+				</form>
+
+				<a href="	/index.html
+">Accueil</a>
+				<a href="	/projects.html
+">Projets</a>
+				<a href="	/skills.html
+">Compétences</a>
+				<a class="contact-me" href="	/contact.html
+">Me contacter</a>
+			</nav>
+		</header>
+
+		<main>
+			<div id="title">
+				<!-- <a href="	/skills.html
+">Compétences</a> -->
+				<h1><a href="	/skills.html
+">Compétences</a> 🞂 Administration système</h1>
+				<div id="page-controls">
+					<button id="dark-theme-toggle" class="theme-toggle">					<img src="/images/icons/moon-solid.svg" width="20" height="20">
+</button>
+					<button id="light-theme-toggle" class="theme-toggle">					<img src="/images/icons/sun-regular.svg" width="20" height="20">
+</button>
+					<select id="language" name="language">
+													<option
+								value="fr"
+								onclick="window.location.href = '/skills/system-administration.html'"
+								selected>
+								🇫🇷
+							</option>
+											</select>
+				</div>
+			</div>
+
+			<hr>
+
+			<div id="content">
+					<button id="nav-burger-button" class="menu-control" onclick="showNavMenu()">					<img class="icon" src="/images/icons/dark/menu.svg" width="20" height="20">
+</button>
+
+	
+	<aside id="table-of-contents" class="side-menu">
+		<p>Contenu [<a href="#">Haut de page</a>]</p>
+		<button id="hide-nav-menu" class="menu-control" onclick="hideNavMenu()">					<img class="icon" src="/images/icons/dark/xmark.svg" width="" height="">
+</button>
+		<hr>
+			<ul>
+			<li>
+			<a href="#description">Description</a>
+								</li>
+			<li>
+			<a href="#tags-liés">Tags liés</a>
+								</li>
+			<li>
+			<a href="#projets-liés">Projets liés</a>
+								</li>
+		</ul>
+
+	</aside>
+
+	<section>
+					
+<h2 id="description" class="section">
+	Description
+	<button class="go-to-section" onclick="goto('description')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+	<article class="aligned-content">
+		<div class="content-column">
+		<p>
+	Cette compétence rassemble tous les projets qui ont nécessité des
+	connaissances et des compétences d'administration système.
+	<br>
+	Typiquement, les projets nécessitant cette compétences sont tous les projets
+	en rapport avec le déploiement d'applications, la cyber sécurité et
+	l'administration réseau.
+</p>
+		</div>
+	</article>
+
+		
+<h2 id="tags-liés" class="section">
+	Tags liés
+	<button class="go-to-section" onclick="goto('tags-liés')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+	<article class="aligned-content">
+			<div id="" class=" tag-list">
+				<a class="tag tag-réseau"
+		name="réseau"
+		href="	/search.html
+?tag=Réseau"
+		style="background-color: rgb(255, 153, 51); border-color: rgb(153, 92, 31);"
+		onmouseover="this.style.backgroundColor='rgb(217, 130, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 153, 51)';">
+				Réseau
+	</a>
+
+				<a class="tag tag-shell"
+		name="shell"
+		href="	/search.html
+?tag=Shell"
+		style="background-color: rgb(255, 102, 255); border-color: rgb(153, 61, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 87, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 102, 255)';">
+				Shell
+	</a>
+
+				<a class="tag tag-apache"
+		name="apache"
+		href="	/search.html
+?tag=Apache"
+		style="background-color: rgb(102, 255, 153); border-color: rgb(61, 153, 92);"
+		onmouseover="this.style.backgroundColor='rgb(87, 217, 130)';" 
+		onmouseout="this.style.backgroundColor='rgb(102, 255, 153)';">
+				Apache
+	</a>
+
+				<a class="tag tag-debian"
+		name="debian"
+		href="	/search.html
+?tag=Debian"
+		style="background-color: rgb(255, 51, 204); border-color: rgb(153, 31, 122);"
+		onmouseover="this.style.backgroundColor='rgb(217, 43, 173)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 51, 204)';">
+				Debian
+	</a>
+
+				<a class="tag tag-ldap"
+		name="ldap"
+		href="	/search.html
+?tag=LDAP"
+		style="background-color: rgb(255, 153, 102); border-color: rgb(153, 92, 61);"
+		onmouseover="this.style.backgroundColor='rgb(217, 130, 87)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 153, 102)';">
+				LDAP
+	</a>
+
+				<a class="tag tag-linux"
+		name="linux"
+		href="	/search.html
+?tag=Linux"
+		style="background-color: rgb(255, 215, 0); border-color: rgb(153, 129, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 183, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 215, 0)';">
+				Linux
+	</a>
+
+				<a class="tag tag-postgresql"
+		name="postgresql"
+		href="	/search.html
+?tag=PostgreSQL"
+		style="background-color: rgb(32, 178, 170); border-color: rgb(19, 107, 102);"
+		onmouseover="this.style.backgroundColor='rgb(27, 151, 145)';" 
+		onmouseout="this.style.backgroundColor='rgb(32, 178, 170)';">
+				PostgreSQL
+	</a>
+
+				<a class="tag tag-samba"
+		name="samba"
+		href="	/search.html
+?tag=Samba"
+		style="background-color: rgb(255, 51, 51); border-color: rgb(153, 31, 31);"
+		onmouseover="this.style.backgroundColor='rgb(217, 43, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 51, 51)';">
+				Samba
+	</a>
+
+		</div>
+
+	</article>
+	
+	
+<h2 id="projets-liés" class="section">
+	Projets liés
+	<button class="go-to-section" onclick="goto('projets-liés')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+	<article class="aligned-content">
+		<div class="content-column">
+			<div class="thumbnails">
+			<a href="	/projects/development-environment-setup.html
+">
+				<p>Mise en place d&#039;un environnement de développement</p>
+	</a>
+			<a href="	/projects/debian-12-server-installation-guide.html
+">
+				<p>Guide d&#039;installation d&#039;un serveur Debian 12</p>
+	</a>
+			<a href="	/projects/chatodyssee.html
+">
+						<img src="/images/projects/chatodyssee/cover.png" width="120">
+						<p>Chatodyssée</p>
+	</a>
+			<a href="	/projects/vortex-network.html
+">
+				<p>Vortex Network</p>
+	</a>
+	</div>
+
+		</div>
+	</article>
+	
+	</section>
+			</div>
+		</main>
+
+		<footer>
+			<div id="socials">
+				<a href="mailto:nolan.dupont@proton.me" target="_blank">					<img class="icon" src="/images/icons/dark/mail.svg" width="20" height="20">
+</a>
+				<a href="https://gitlab.com/nolan-dupont" target="_blank">					<img class="icon" src="/images/icons/dark/gitlab.svg" width="20" height="20">
+</a>
+				<a href="https://github.com/nolan-dupont" target="_blank">					<img class="icon" src="/images/icons/dark/github.svg" width="20" height="20">
+</a>
+			</div>
+			<hr>
+			<div>
+				<p>Lisez le <a href="https://github.com/nolan-dupont/portfolio">code source</a> de cette page sur GitHub.</p>
+			</div>
+			<hr>
+			<div id="copyrights">
+				<p>Les icônes de ce site proviennent do <a href="https://fontawesome.com">FontAwesome 					<img class="icon" src="/images/icons/dark/font-awesome.svg" width="12" height="12">
+</a>.</p>
+			</div>
+		</footer>
+
+			<script src="/scripts/main.js"></script>
+
+			<script src="/scripts/theme.js"></script>
+
+			<script src="/scripts/terminal.js"></script>
+
+			</body>
+
+</html>
