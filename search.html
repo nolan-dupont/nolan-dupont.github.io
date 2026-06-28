@@ -5,7 +5,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Portfolio - Chercher des projets</title>
+		<title>Portfolio - Chercher des projets et expériences professionnelles</title>
 			<link rel="stylesheet" href="/style/header.css">
 
 			<link rel="stylesheet" href="/style/main.css">
@@ -20,7 +20,7 @@
 
 			<link rel="stylesheet" href="/style/search.css">
 
-		<title>Chercher des projets</title>
+		<title>Chercher des projets et expériences professionnelles</title>
 	</head>
 
 	<body>
@@ -37,18 +37,18 @@
 			<nav id="main-menu">
 				<form id="searchbar" action="	/search.html
 " method="get">
-					<input id="search-field" name="s" type="search" placeholder="Chercher des projets...">
+					<input id="search-field" name="s" type="search" placeholder="Chercher des projets et expériences professionnelles...">
 					<button id="search-button" type="submit">					<img class="icon" src="/images/icons/dark/magnifying-glass.svg" width="20" height="20">
 </button>
 					<div id="search-results">
-						<p id="no-results">Aucun projet trouvé</p>
+						<p id="no-results">Aucun projet ou expérience professionnelle trouvé</p>
 					</div>
 				</form>
 
 				<a href="	/index.html
 ">Accueil</a>
 				<a href="	/projects.html
-">Projets</a>
+">Expérience</a>
 				<a href="	/skills.html
 ">Compétences</a>
 				<a class="contact-me" href="	/contact.html
@@ -59,7 +59,7 @@
 		<main>
 			<div id="title">
 				<!--  -->
-				<h1>Chercher des projets</h1>
+				<h1>Chercher des projets et expériences professionnelles</h1>
 				<div id="page-controls">
 					<button id="dark-theme-toggle" class="theme-toggle">					<img src="/images/icons/moon-solid.svg" width="20" height="20">
 </button>
@@ -80,6 +80,13 @@
 
 			<div id="content">
 					<aside id="filters-menu" class="side-menu">
+		<h2>Filter par type</h2>
+		<select id="type-select" name="type-select">
+			<option value="all">Tous</option>
+			<option value="job">Expériences professionnelles</option>
+			<option value="project">Projets</option>
+		</select>
+
 		<h2>Compétences</h2>
 		<h3>Sélectionnées</h3>
 			<div id="selected-skills" class=" tag-list">
@@ -198,6 +205,26 @@
 				Web
 	</a>
 
+				<a class="tag tag-ci/cd"
+		name="ci/cd"
+		href="	/search.html
+?tag=CI/CD"
+		style="background-color: rgb(146, 56, 255); border-color: rgb(88, 34, 153);"
+		onmouseover="this.style.backgroundColor='rgb(124, 48, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(146, 56, 255)';">
+				CI/CD
+	</a>
+
+				<a class="tag tag-c++"
+		name="c++"
+		href="	/search.html
+?tag=C++"
+		style="background-color: rgb(224, 255, 49); border-color: rgb(134, 153, 29);"
+		onmouseover="this.style.backgroundColor='rgb(190, 217, 42)';" 
+		onmouseout="this.style.backgroundColor='rgb(224, 255, 49)';">
+				C++
+	</a>
+
 				<a class="tag tag-html/css"
 		name="html/css"
 		href="	/search.html
@@ -268,6 +295,16 @@
 				SQL
 	</a>
 
+				<a class="tag tag-active-directory"
+		name="active-directory"
+		href="	/search.html
+?tag=Active Directory"
+		style="background-color: rgb(33, 205, 228); border-color: rgb(20, 123, 137);"
+		onmouseover="this.style.backgroundColor='rgb(28, 174, 194)';" 
+		onmouseout="this.style.backgroundColor='rgb(33, 205, 228)';">
+				Active Directory
+	</a>
+
 				<a class="tag tag-apache"
 		name="apache"
 		href="	/search.html
@@ -286,6 +323,16 @@
 		onmouseover="this.style.backgroundColor='rgb(217, 43, 173)';" 
 		onmouseout="this.style.backgroundColor='rgb(255, 51, 204)';">
 				Debian
+	</a>
+
+				<a class="tag tag-docker"
+		name="docker"
+		href="	/search.html
+?tag=Docker"
+		style="background-color: rgb(35, 104, 233); border-color: rgb(21, 62, 140);"
+		onmouseover="this.style.backgroundColor='rgb(30, 88, 198)';" 
+		onmouseout="this.style.backgroundColor='rgb(35, 104, 233)';">
+				Docker
 	</a>
 
 				<a class="tag tag-javafx"
@@ -322,10 +369,20 @@
 		name="postgresql"
 		href="	/search.html
 ?tag=PostgreSQL"
-		style="background-color: rgb(32, 178, 170); border-color: rgb(19, 107, 102);"
-		onmouseover="this.style.backgroundColor='rgb(27, 151, 145)';" 
-		onmouseout="this.style.backgroundColor='rgb(32, 178, 170)';">
+		style="background-color: rgb(217, 90, 22); border-color: rgb(130, 54, 13);"
+		onmouseover="this.style.backgroundColor='rgb(184, 77, 19)';" 
+		onmouseout="this.style.backgroundColor='rgb(217, 90, 22)';">
 				PostgreSQL
+	</a>
+
+				<a class="tag tag-proxmox"
+		name="proxmox"
+		href="	/search.html
+?tag=Proxmox"
+		style="background-color: rgb(235, 123, 25); border-color: rgb(141, 74, 15);"
+		onmouseover="this.style.backgroundColor='rgb(200, 105, 21)';" 
+		onmouseout="this.style.backgroundColor='rgb(235, 123, 25)';">
+				Proxmox
 	</a>
 
 				<a class="tag tag-samba"
@@ -365,7 +422,7 @@
 	<section>
 		<table id="projects">
 			<tr id="projects-header">
-				<th>Nom du projet</th>
+				<th>Nom</th>
 				<th>Compétences</th>
 				<th>Étiquettes</th>
 			</tr>
@@ -418,80 +475,6 @@
 		onmouseover="this.style.backgroundColor='rgb(217, 87, 0)';" 
 		onmouseout="this.style.backgroundColor='rgb(255, 102, 0)';">
 				Java
-	</a>
-
-		</div>
-</td>
-				</tr>
-							<tr name="development-environment-setup">
-					<td><b><a href="	/projects/development-environment-setup.html
-">Mise en place d&#039;un environnement de développement</a></b></td>
-					<td>	<div id="" class=" tag-list">
-				<a class="tag tag-system-administration"
-		name="system-administration"
-		href="	/search.html
-?tag=Administration système"
-		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
-		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
-		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
-										<img src="/images/icons/light/terminal.svg" width="10" height="10">
-
-				Administration système
-	</a>
-
-		</div>
-</td>
-					<td>	<div id="" class=" tag-list">
-				<a class="tag tag-linux"
-		name="linux"
-		href="	/search.html
-?tag=Linux"
-		style="background-color: rgb(255, 215, 0); border-color: rgb(153, 129, 0);"
-		onmouseover="this.style.backgroundColor='rgb(217, 183, 0)';" 
-		onmouseout="this.style.backgroundColor='rgb(255, 215, 0)';">
-				Linux
-	</a>
-
-				<a class="tag tag-debian"
-		name="debian"
-		href="	/search.html
-?tag=Debian"
-		style="background-color: rgb(255, 51, 204); border-color: rgb(153, 31, 122);"
-		onmouseover="this.style.backgroundColor='rgb(217, 43, 173)';" 
-		onmouseout="this.style.backgroundColor='rgb(255, 51, 204)';">
-				Debian
-	</a>
-
-		</div>
-</td>
-				</tr>
-							<tr name="database-creation">
-					<td><b><a href="	/projects/database-creation.html
-">Création d&#039;une base de données</a></b></td>
-					<td>	<div id="" class=" tag-list">
-				<a class="tag tag-data-science"
-		name="data-science"
-		href="	/search.html
-?tag=Science des données"
-		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
-		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
-		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
-										<img src="/images/icons/light/database.svg" width="10" height="10">
-
-				Science des données
-	</a>
-
-		</div>
-</td>
-					<td>	<div id="" class=" tag-list">
-				<a class="tag tag-sql"
-		name="sql"
-		href="	/search.html
-?tag=SQL"
-		style="background-color: rgb(255, 99, 71); border-color: rgb(153, 59, 43);"
-		onmouseover="this.style.backgroundColor='rgb(217, 84, 60)';" 
-		onmouseout="this.style.backgroundColor='rgb(255, 99, 71)';">
-				SQL
 	</a>
 
 		</div>
@@ -702,9 +685,9 @@
 		name="postgresql"
 		href="	/search.html
 ?tag=PostgreSQL"
-		style="background-color: rgb(32, 178, 170); border-color: rgb(19, 107, 102);"
-		onmouseover="this.style.backgroundColor='rgb(27, 151, 145)';" 
-		onmouseout="this.style.backgroundColor='rgb(32, 178, 170)';">
+		style="background-color: rgb(217, 90, 22); border-color: rgb(130, 54, 13);"
+		onmouseover="this.style.backgroundColor='rgb(184, 77, 19)';" 
+		onmouseout="this.style.backgroundColor='rgb(217, 90, 22)';">
 				PostgreSQL
 	</a>
 
@@ -896,9 +879,9 @@
 		name="postgresql"
 		href="	/search.html
 ?tag=PostgreSQL"
-		style="background-color: rgb(32, 178, 170); border-color: rgb(19, 107, 102);"
-		onmouseover="this.style.backgroundColor='rgb(27, 151, 145)';" 
-		onmouseout="this.style.backgroundColor='rgb(32, 178, 170)';">
+		style="background-color: rgb(217, 90, 22); border-color: rgb(130, 54, 13);"
+		onmouseover="this.style.backgroundColor='rgb(184, 77, 19)';" 
+		onmouseout="this.style.backgroundColor='rgb(217, 90, 22)';">
 				PostgreSQL
 	</a>
 
@@ -1012,6 +995,16 @@
 		onmouseover="this.style.backgroundColor='rgb(217, 87, 217)';" 
 		onmouseout="this.style.backgroundColor='rgb(255, 102, 255)';">
 				Shell
+	</a>
+
+				<a class="tag tag-proxmox"
+		name="proxmox"
+		href="	/search.html
+?tag=Proxmox"
+		style="background-color: rgb(235, 123, 25); border-color: rgb(141, 74, 15);"
+		onmouseover="this.style.backgroundColor='rgb(200, 105, 21)';" 
+		onmouseout="this.style.backgroundColor='rgb(235, 123, 25)';">
+				Proxmox
 	</a>
 
 				<a class="tag tag-python"
@@ -1139,6 +1132,196 @@
 		</div>
 </td>
 				</tr>
+							<tr name="ircam-internship">
+					<td><b><a href="	/projects/ircam-internship.html
+">Stage à l&#039;IRCAM</a></b></td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-application-development"
+		name="application-development"
+		href="	/search.html
+?tag=Développement d&#039;applications"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/code.svg" width="10" height="10">
+
+				Développement d&#039;applications
+	</a>
+
+				<a class="tag tag-teamwork"
+		name="teamwork"
+		href="	/search.html
+?tag=Travail d&#039;équipe"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/people-group.svg" width="10" height="10">
+
+				Travail d&#039;équipe
+	</a>
+
+		</div>
+</td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-c++"
+		name="c++"
+		href="	/search.html
+?tag=C++"
+		style="background-color: rgb(224, 255, 49); border-color: rgb(134, 153, 29);"
+		onmouseover="this.style.backgroundColor='rgb(190, 217, 42)';" 
+		onmouseout="this.style.backgroundColor='rgb(224, 255, 49)';">
+				C++
+	</a>
+
+				<a class="tag tag-ci/cd"
+		name="ci/cd"
+		href="	/search.html
+?tag=CI/CD"
+		style="background-color: rgb(146, 56, 255); border-color: rgb(88, 34, 153);"
+		onmouseover="this.style.backgroundColor='rgb(124, 48, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(146, 56, 255)';">
+				CI/CD
+	</a>
+
+		</div>
+</td>
+				</tr>
+							<tr name="ambition-it-apprenticeship">
+					<td><b><a href="	/projects/ambition-it-apprenticeship.html
+">Alternance à Ambtion IT</a></b></td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-application-development"
+		name="application-development"
+		href="	/search.html
+?tag=Développement d&#039;applications"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/code.svg" width="10" height="10">
+
+				Développement d&#039;applications
+	</a>
+
+				<a class="tag tag-system-administration"
+		name="system-administration"
+		href="	/search.html
+?tag=Administration système"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/terminal.svg" width="10" height="10">
+
+				Administration système
+	</a>
+
+				<a class="tag tag-teamwork"
+		name="teamwork"
+		href="	/search.html
+?tag=Travail d&#039;équipe"
+		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
+		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
+										<img src="/images/icons/light/people-group.svg" width="10" height="10">
+
+				Travail d&#039;équipe
+	</a>
+
+		</div>
+</td>
+					<td>	<div id="" class=" tag-list">
+				<a class="tag tag-active-directory"
+		name="active-directory"
+		href="	/search.html
+?tag=Active Directory"
+		style="background-color: rgb(33, 205, 228); border-color: rgb(20, 123, 137);"
+		onmouseover="this.style.backgroundColor='rgb(28, 174, 194)';" 
+		onmouseout="this.style.backgroundColor='rgb(33, 205, 228)';">
+				Active Directory
+	</a>
+
+				<a class="tag tag-réseau"
+		name="réseau"
+		href="	/search.html
+?tag=Réseau"
+		style="background-color: rgb(255, 153, 51); border-color: rgb(153, 92, 31);"
+		onmouseover="this.style.backgroundColor='rgb(217, 130, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 153, 51)';">
+				Réseau
+	</a>
+
+				<a class="tag tag-latex"
+		name="latex"
+		href="	/search.html
+?tag=LaTeX"
+		style="background-color: rgb(153, 255, 51); border-color: rgb(92, 153, 31);"
+		onmouseover="this.style.backgroundColor='rgb(130, 217, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(153, 255, 51)';">
+				LaTeX
+	</a>
+
+				<a class="tag tag-linux"
+		name="linux"
+		href="	/search.html
+?tag=Linux"
+		style="background-color: rgb(255, 215, 0); border-color: rgb(153, 129, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 183, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 215, 0)';">
+				Linux
+	</a>
+
+				<a class="tag tag-debian"
+		name="debian"
+		href="	/search.html
+?tag=Debian"
+		style="background-color: rgb(255, 51, 204); border-color: rgb(153, 31, 122);"
+		onmouseover="this.style.backgroundColor='rgb(217, 43, 173)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 51, 204)';">
+				Debian
+	</a>
+
+				<a class="tag tag-docker"
+		name="docker"
+		href="	/search.html
+?tag=Docker"
+		style="background-color: rgb(35, 104, 233); border-color: rgb(21, 62, 140);"
+		onmouseover="this.style.backgroundColor='rgb(30, 88, 198)';" 
+		onmouseout="this.style.backgroundColor='rgb(35, 104, 233)';">
+				Docker
+	</a>
+
+				<a class="tag tag-proxmox"
+		name="proxmox"
+		href="	/search.html
+?tag=Proxmox"
+		style="background-color: rgb(235, 123, 25); border-color: rgb(141, 74, 15);"
+		onmouseover="this.style.backgroundColor='rgb(200, 105, 21)';" 
+		onmouseout="this.style.backgroundColor='rgb(235, 123, 25)';">
+				Proxmox
+	</a>
+
+				<a class="tag tag-python"
+		name="python"
+		href="	/search.html
+?tag=Python"
+		style="background-color: rgb(51, 153, 255); border-color: rgb(31, 92, 153);"
+		onmouseover="this.style.backgroundColor='rgb(43, 130, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(51, 153, 255)';">
+				Python
+	</a>
+
+				<a class="tag tag-python"
+		name="python"
+		href="	/search.html
+?tag=Python"
+		style="background-color: rgb(51, 153, 255); border-color: rgb(31, 92, 153);"
+		onmouseover="this.style.backgroundColor='rgb(43, 130, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(51, 153, 255)';">
+				Python
+	</a>
+
+		</div>
+</td>
+				</tr>
 					</table>
 	</section>
 			</div>
@@ -1155,7 +1338,7 @@
 			</div>
 			<hr>
 			<div>
-				<p>Lisez le <a href="https://github.com/nolan-dupont/portfolio">code source</a> de cette page sur GitHub.</p>
+				<p>Lisez le <a href="https://github.com/nolan-dupont/nolan-dupont.github.io">code source</a> de cette page sur GitHub.</p>
 			</div>
 			<hr>
 			<div id="copyrights">

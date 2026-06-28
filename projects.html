@@ -5,7 +5,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Portfolio - Projets</title>
+		<title>Portfolio - Expérience</title>
 			<link rel="stylesheet" href="/style/header.css">
 
 			<link rel="stylesheet" href="/style/main.css">
@@ -18,7 +18,7 @@
 
 			<link rel="stylesheet" href="/style/responsive.css">
 
-						<title>Projets</title>
+						<title>Expérience</title>
 	</head>
 
 	<body>
@@ -35,18 +35,18 @@
 			<nav id="main-menu">
 				<form id="searchbar" action="	/search.html
 " method="get">
-					<input id="search-field" name="s" type="search" placeholder="Chercher des projets...">
+					<input id="search-field" name="s" type="search" placeholder="Chercher des projets et expériences professionnelles...">
 					<button id="search-button" type="submit">					<img class="icon" src="/images/icons/dark/magnifying-glass.svg" width="20" height="20">
 </button>
 					<div id="search-results">
-						<p id="no-results">Aucun projet trouvé</p>
+						<p id="no-results">Aucun projet ou expérience professionnelle trouvé</p>
 					</div>
 				</form>
 
 				<a href="	/index.html
 ">Accueil</a>
 				<a href="	/projects.html
-">Projets</a>
+">Expérience</a>
 				<a href="	/skills.html
 ">Compétences</a>
 				<a class="contact-me" href="	/contact.html
@@ -57,7 +57,7 @@
 		<main>
 			<div id="title">
 				<!--  -->
-				<h1>Projets</h1>
+				<h1>Expérience</h1>
 				<div id="page-controls">
 					<button id="dark-theme-toggle" class="theme-toggle">					<img src="/images/icons/moon-solid.svg" width="20" height="20">
 </button>
@@ -88,24 +88,67 @@
 		<hr>
 			<ul>
 			<li>
+			<a href="#expériences-professionnelles">Expériences professionnelles</a>
+								</li>
+			<li>
+			<a href="#projets-réalisés">Projets réalisés</a>
+							<ul>
+			<li>
 			<a href="#projets-les-plus-importants">Projets les plus importants</a>
 								</li>
 			<li>
 			<a href="#autres-projects">Autres projects</a>
 								</li>
 		</ul>
+		</li>
+		</ul>
 
 	</aside>
 
 	<section>
 				
-<h2 id="projets-les-plus-importants" class="section">
+<h2 id="expériences-professionnelles" class="section">
+	Expériences professionnelles
+	<button class="go-to-section" onclick="goto('expériences-professionnelles')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+<article class="aligned-content">
+	<div class="content-column">
+		<div class="thumbnails">
+			<a href="	/projects/ircam-internship.html
+">
+				<p>Stage à l&#039;IRCAM</p>
+	</a>
+			<a href="	/projects/ambition-it-apprenticeship.html
+">
+				<p>Alternance à Ambtion IT</p>
+	</a>
+	</div>
+
+	</div>
+</article>
+
+
+<h2 id="projets-réalisés" class="section">
+	Projets réalisés
+	<button class="go-to-section" onclick="goto('projets-réalisés')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+
+
+<h3 id="projets-les-plus-importants" class="subsection">
 	Projets les plus importants
 	<button class="go-to-section" onclick="goto('projets-les-plus-importants')">
 							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
 
 	</button>
-</h2>
+</h3>
 <hr>
 <article class="aligned-content">
 	<div class="content-column">
@@ -138,13 +181,13 @@
 </article>
 
 
-<h2 id="autres-projects" class="section">
+<h3 id="autres-projects" class="subsection">
 	Autres projects
 	<button class="go-to-section" onclick="goto('autres-projects')">
 							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
 
 	</button>
-</h2>
+</h3>
 <hr>
 <article class="aligned-content">
 	<div class="content-column">
@@ -152,14 +195,6 @@
 			<a href="	/projects/dispatch-sorter.html
 ">
 				<p>Programme de classification de dépêches</p>
-	</a>
-			<a href="	/projects/development-environment-setup.html
-">
-				<p>Mise en place d&#039;un environnement de développement</p>
-	</a>
-			<a href="	/projects/database-creation.html
-">
-				<p>Création d&#039;une base de données</p>
 	</a>
 			<a href="	/projects/static-enterprise-website.html
 ">
@@ -189,7 +224,7 @@
 			</div>
 			<hr>
 			<div>
-				<p>Lisez le <a href="https://github.com/nolan-dupont/portfolio">code source</a> de cette page sur GitHub.</p>
+				<p>Lisez le <a href="https://github.com/nolan-dupont/nolan-dupont.github.io">code source</a> de cette page sur GitHub.</p>
 			</div>
 			<hr>
 			<div id="copyrights">

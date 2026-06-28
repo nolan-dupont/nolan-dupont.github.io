@@ -92,6 +92,7 @@ header nav > a {
 #search-field {
 	display: block;
 	font-size: 13pt;
+	width: 360pt;
 }
 
 #search-field:focus {

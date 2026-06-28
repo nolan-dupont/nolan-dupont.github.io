@@ -6,6 +6,7 @@ const selectedSkillsDiv = document.getElementById("selected-skills");
 const availableSkillsDiv = document.getElementById("available-skills");
 const selectedTagsDiv = document.getElementById("selected-tags");
 const availableTagsDiv = document.getElementById("available-tags");
+const typeSelect = document.getElementById("type-select")
 
 let projectsJson = [];
 
@@ -27,15 +28,22 @@ function refresh() {
 		tagsFilter.push(tag.name);
 	}
 
-	const filteredProjects = [];
+	const filteredProjects1 = [];
 	for (const project of projectsJson) {
+		if (typeSelect.value == "all" || project.type == typeSelect.value) {
+			filteredProjects1.push(project);
+		}
+	}
+
+	const filteredProjects2 = [];
+	for (const project of filteredProjects1) {
 		if (skillsFilter.every(skill => project.skills.includes(skill))) {
-			filteredProjects.push(project);
+			filteredProjects2.push(project);
 		}
 	}
 
 	const finalProjects = [];
-	for (const project of filteredProjects) {
+	for (const project of filteredProjects2) {
 		if (tagsFilter.every(tag => project.tags.includes(tag))) {
 			finalProjects.push(project.id);
 		}
@@ -123,3 +131,8 @@ for (const tag of tags) {
 	}
 	tag.href = "javascript: void(0)";
 }
+
+typeSelect.addEventListener("change", function() {
+	console.log("changed");
+	refresh();
+});

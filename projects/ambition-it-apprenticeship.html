@@ -5,7 +5,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Portfolio - Application de gestion d&#039;évènements</title>
+		<title>Portfolio - Alternance à Ambtion IT</title>
 			<link rel="stylesheet" href="/style/header.css">
 
 			<link rel="stylesheet" href="/style/main.css">
@@ -18,7 +18,7 @@
 
 			<link rel="stylesheet" href="/style/responsive.css">
 
-						<title>Application de gestion d&#039;évènements</title>
+						<title>Alternance à Ambtion IT</title>
 	</head>
 
 	<body>
@@ -57,9 +57,9 @@
 		<main>
 			<div id="title">
 				<!-- <a href="	/projects.html
-#event-management-application">Expérience</a> -->
+#ambition-it-apprenticeship">Expérience</a> -->
 				<h1><a href="	/projects.html
-#event-management-application">Expérience</a> 🞂 Application de gestion d&#039;évènements</h1>
+#ambition-it-apprenticeship">Expérience</a> 🞂 Alternance à Ambtion IT</h1>
 				<div id="page-controls">
 					<button id="dark-theme-toggle" class="theme-toggle">					<img src="/images/icons/moon-solid.svg" width="20" height="20">
 </button>
@@ -68,7 +68,7 @@
 					<select id="language" name="language">
 													<option
 								value="fr"
-								onclick="window.location.href = '/projects/event-management-application.html'"
+								onclick="window.location.href = '/projects/ambition-it-apprenticeship.html'"
 								selected>
 								🇫🇷
 							</option>
@@ -91,21 +91,18 @@
 			<ul>
 			<li>
 			<a href="#description">Description</a>
+								</li>
+			<li>
+			<a href="#missions">Missions</a>
 							<ul>
 			<li>
-			<a href="#produit-final">Produit final</a>
+			<a href="#infrastructure-proxmox">Infrastructure Proxmox</a>
 								</li>
 			<li>
-			<a href="#détails-techniques">Détails techniques</a>
-								</li>
-			<li>
-			<a href="#rôle">Rôle</a>
+			<a href="#a.m.e.l.!.a.">A.M.E.L.!.A.</a>
 								</li>
 		</ul>
 		</li>
-			<li>
-			<a href="#galerie">Galerie</a>
-								</li>
 			<li>
 			<a href="#voir-aussi">Voir aussi</a>
 								</li>
@@ -125,72 +122,85 @@
 <hr>
 	<article class="aligned-content">
 		<div class="content-column">
-		
-Dans le cadre de ce projet, nous avons développé par groupe de 5 personnes une
-application de gestion d'évènement.
-Le thème de l'application était libre, nous avons décidé de créer un application
-à destination des propriétaires de salons de jeux de sociétés.
-<br>
-Cette application permet de gérer le matériel, les membres, les employés, les
-commandes et planning d'une petite entreprise.
+		    <p>
+	Cette alternance s'est déroulée au sein d'Ambition IT, durant laquelle j'ai
+	travaillé au côté du support technique d'Ambition, pour la durée d'un an.
+	Cela m'a permis d'en apprendre beaucoup dans le domaine professionnel de la
+	maintenance et de l'administration système et réseau.
+    </p>
 
+    
+<h2 id="missions" class="section">
+	Missions
+	<button class="go-to-section" onclick="goto('missions')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
 
-<h3 id="produit-final" class="subsection">
-	Produit final
-	<button class="go-to-section" onclick="goto('produit-final')">
+	</button>
+</h2>
+<hr>
+
+    <p>
+    Mes deux missions les plus importantes sont détaillées ci-dessous, mais j'ai
+    aussi reçu des missions plus courtes tel que la mise en place d'un routeur
+    pare-feu pour une école, avec un proxy HTTP permettant de filtrer le traffic
+    web.
+    </p>
+
+    
+<h3 id="infrastructure-proxmox" class="subsection">
+	Infrastructure Proxmox
+	<button class="go-to-section" onclick="goto('infrastructure-proxmox')">
 							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
 
 	</button>
 </h3>
 <hr>
 
-Un image du produit final est disponible dans la galerie (voir
-		<a href="#figure-owner-view">Figure 2</a>
-).
-Il s'agit de la vue de l'application du gérant du salon de jeu. Il a accès à
-toutes les fonctionnalités de l'application, tandis que les gestionnaires n'ont
-pas accès au planning, et les animateurs n'ont accès qu'au planning.
+    <p>
+    Il s'agit de la mission la plus importante de cette alternance. Cette
+    mission a consisté à créer un concept d'infrastructure réseau hébergée par
+    un cluster d'hyperviseur Proxmox.
+    </p>
 
+    <p>
+    Il a été nécessaire de mettre en place de la haute disponibilité ainsi que
+    des sauvegardes périodiques et du RAID logiciel afin de permettre la
+    poursuite et la reprise d'activité du système d'information.
+    </p>
 
-<h3 id="détails-techniques" class="subsection">
-	Détails techniques
-	<button class="go-to-section" onclick="goto('détails-techniques')">
+    
+<h3 id="a.m.e.l.!.a." class="subsection">
+	A.M.E.L.!.A.
+	<button class="go-to-section" onclick="goto('a.m.e.l.!.a.')">
 							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
 
 	</button>
 </h3>
 <hr>
 
-Ce projet a utilisé la bibliothèque d'interface graphique JavaFX, il a reçu une
-semaine de cadrage de projet, suivi immédiatement d'une semaine de
-développement.
+    <p>
+    Il s'agit de la mission la seconde plus importante de cette alternance.
+    Cette mission a été consacrée à la création d'un intelligence artificielle
+    avec un mécanisme de Retrieval Augmented Generation (RAG).
+    </p>
 
-Aucune de base de données relationnelle n'a été utilisée, à la place nous avons
-utilisé la sérialisation de classes Java pour enregistrer l'état de
-l'application.
+    <p>
+    Cet outil est à destination du support d'Ambition IT, et qui a pour objectif
+    d'assurer le support de niveau 0 (prise d'information). Cet outil intègre
+    aussi d'autres fonctionnalités tel que l'ajout de rappel automatiques sous
+    les tickets non fermés.
+    </p>
 
-
-<h3 id="rôle" class="subsection">
-	Rôle
-	<button class="go-to-section" onclick="goto('rôle')">
-							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
-
-	</button>
-</h3>
-<hr>
-
-Mon rôle a été dans un premier temps de participer à la phase cadrage de projet,
-durant laquelle nous avons créé un document de conception, pris en compte les
-contraintes du projet, choisi un logo et avons fait des diagrammes UML.
-
-Parmi ces diagrammes UML, nous avons réalisé un diagramme de classe.
-
+    <p>
+    L'outil a été réalisé en Python, et intérroge une base de données MariaDB,
+    un serveur faisant tourner Ollama pour la génération de réponses, et l'API
+    des outils de ticketing du support.
+    </p>
 		</div>
 
 		<aside class="info-box">
-	<img id="project-cover" src="/images/projects/event-management-application/cover.png" width="250">
-
-<h1>Application de gestion d&#039;évènements</h1>
+	
+<h1>Alternance à Ambtion IT</h1>
 <table>
 	<tr>
 		<th>Compétences</th>
@@ -207,28 +217,16 @@ Parmi ces diagrammes UML, nous avons réalisé un diagramme de classe.
 				Développement d&#039;applications
 	</a>
 
-				<a class="tag tag-programs-optimization"
-		name="programs-optimization"
+				<a class="tag tag-system-administration"
+		name="system-administration"
 		href="	/search.html
-?tag=Optimisation de programmes"
+?tag=Administration système"
 		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
 		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
 		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
-										<img src="/images/icons/light/gear.svg" width="10" height="10">
+										<img src="/images/icons/light/terminal.svg" width="10" height="10">
 
-				Optimisation de programmes
-	</a>
-
-				<a class="tag tag-project-management"
-		name="project-management"
-		href="	/search.html
-?tag=Gestion de projets"
-		style="background-color: rgb(255, 255, 255); border-color: rgb(153, 153, 153);"
-		onmouseover="this.style.backgroundColor='rgb(217, 217, 217)';" 
-		onmouseout="this.style.backgroundColor='rgb(255, 255, 255)';">
-										<img src="/images/icons/light/list-check.svg" width="10" height="10">
-
-				Gestion de projets
+				Administration système
 	</a>
 
 				<a class="tag tag-teamwork"
@@ -249,24 +247,94 @@ Parmi ces diagrammes UML, nous avons réalisé un diagramme de classe.
 	<tr>
 		<th>Étiquettes</th>
 		<td>	<div id="" class=" tag-list">
-				<a class="tag tag-java"
-		name="java"
+				<a class="tag tag-active-directory"
+		name="active-directory"
 		href="	/search.html
-?tag=Java"
-		style="background-color: rgb(255, 102, 0); border-color: rgb(153, 61, 0);"
-		onmouseover="this.style.backgroundColor='rgb(217, 87, 0)';" 
-		onmouseout="this.style.backgroundColor='rgb(255, 102, 0)';">
-				Java
+?tag=Active Directory"
+		style="background-color: rgb(33, 205, 228); border-color: rgb(20, 123, 137);"
+		onmouseover="this.style.backgroundColor='rgb(28, 174, 194)';" 
+		onmouseout="this.style.backgroundColor='rgb(33, 205, 228)';">
+				Active Directory
 	</a>
 
-				<a class="tag tag-javafx"
-		name="javafx"
+				<a class="tag tag-réseau"
+		name="réseau"
 		href="	/search.html
-?tag=JavaFX"
-		style="background-color: rgb(255, 204, 102); border-color: rgb(153, 122, 61);"
-		onmouseover="this.style.backgroundColor='rgb(217, 173, 87)';" 
-		onmouseout="this.style.backgroundColor='rgb(255, 204, 102)';">
-				JavaFX
+?tag=Réseau"
+		style="background-color: rgb(255, 153, 51); border-color: rgb(153, 92, 31);"
+		onmouseover="this.style.backgroundColor='rgb(217, 130, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 153, 51)';">
+				Réseau
+	</a>
+
+				<a class="tag tag-latex"
+		name="latex"
+		href="	/search.html
+?tag=LaTeX"
+		style="background-color: rgb(153, 255, 51); border-color: rgb(92, 153, 31);"
+		onmouseover="this.style.backgroundColor='rgb(130, 217, 43)';" 
+		onmouseout="this.style.backgroundColor='rgb(153, 255, 51)';">
+				LaTeX
+	</a>
+
+				<a class="tag tag-linux"
+		name="linux"
+		href="	/search.html
+?tag=Linux"
+		style="background-color: rgb(255, 215, 0); border-color: rgb(153, 129, 0);"
+		onmouseover="this.style.backgroundColor='rgb(217, 183, 0)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 215, 0)';">
+				Linux
+	</a>
+
+				<a class="tag tag-debian"
+		name="debian"
+		href="	/search.html
+?tag=Debian"
+		style="background-color: rgb(255, 51, 204); border-color: rgb(153, 31, 122);"
+		onmouseover="this.style.backgroundColor='rgb(217, 43, 173)';" 
+		onmouseout="this.style.backgroundColor='rgb(255, 51, 204)';">
+				Debian
+	</a>
+
+				<a class="tag tag-docker"
+		name="docker"
+		href="	/search.html
+?tag=Docker"
+		style="background-color: rgb(35, 104, 233); border-color: rgb(21, 62, 140);"
+		onmouseover="this.style.backgroundColor='rgb(30, 88, 198)';" 
+		onmouseout="this.style.backgroundColor='rgb(35, 104, 233)';">
+				Docker
+	</a>
+
+				<a class="tag tag-proxmox"
+		name="proxmox"
+		href="	/search.html
+?tag=Proxmox"
+		style="background-color: rgb(235, 123, 25); border-color: rgb(141, 74, 15);"
+		onmouseover="this.style.backgroundColor='rgb(200, 105, 21)';" 
+		onmouseout="this.style.backgroundColor='rgb(235, 123, 25)';">
+				Proxmox
+	</a>
+
+				<a class="tag tag-python"
+		name="python"
+		href="	/search.html
+?tag=Python"
+		style="background-color: rgb(51, 153, 255); border-color: rgb(31, 92, 153);"
+		onmouseover="this.style.backgroundColor='rgb(43, 130, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(51, 153, 255)';">
+				Python
+	</a>
+
+				<a class="tag tag-python"
+		name="python"
+		href="	/search.html
+?tag=Python"
+		style="background-color: rgb(51, 153, 255); border-color: rgb(31, 92, 153);"
+		onmouseover="this.style.backgroundColor='rgb(43, 130, 217)';" 
+		onmouseout="this.style.backgroundColor='rgb(51, 153, 255)';">
+				Python
 	</a>
 
 		</div>
@@ -277,49 +345,16 @@ Parmi ces diagrammes UML, nous avons réalisé un diagramme de classe.
 <table>
 	<tr>
 		<th>Taille</th>
-		<td>5 membres</td>
+		<td>1 membre</td>
 	</tr>
 		<tr>
 		<th>Mon rôle</th>
-		<td>Développeur</td>
+		<td>Alternant</td>
 	</tr>
 	</table>
 </aside>
 	</article>
 
-		
-<h2 id="galerie" class="section">
-	Galerie
-	<button class="go-to-section" onclick="goto('galerie')">
-							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
-
-	</button>
-</h2>
-<hr>
-	<article class="aligned-content">
-		<div class="content-column">
-			<div class="thumbnails">
-							<a href="/images/projects/event-management-application/cover.png" target="_blank">
-					<figure id="figure-cover">
-						<img width="235" src="/images/projects/event-management-application/cover.png">
-						<figcaption>
-							<b>Fig. 1 :</b>
-							DashBoardGame
-						</figcaption>
-					</figure>
-				</a>
-							<a href="/images/projects/event-management-application/owner-view.png" target="_blank">
-					<figure id="figure-owner-view">
-						<img width="235" src="/images/projects/event-management-application/owner-view.png">
-						<figcaption>
-							<b>Fig. 2 :</b>
-							Vue du gérant
-						</figcaption>
-					</figure>
-				</a>
-						</div>
-		</div>
-	</article>
 	
 		
 			
@@ -334,18 +369,18 @@ Parmi ces diagrammes UML, nous avons réalisé un diagramme de classe.
 	<article class="aligned-content">
 		<div class="content-column">
 			<div class="thumbnails">
+			<a href="	/projects/vortex-network.html
+">
+				<p>Vortex Network</p>
+	</a>
 			<a href="	/projects/chatodyssee.html
 ">
 						<img src="/images/projects/chatodyssee/cover.png" width="120">
 						<p>Chatodyssée</p>
 	</a>
-			<a href="	/projects/vortex-network.html
+			<a href="	/projects/debian-12-server-installation-guide.html
 ">
-				<p>Vortex Network</p>
-	</a>
-			<a href="	/projects/dispatch-sorter.html
-">
-				<p>Programme de classification de dépêches</p>
+				<p>Guide d&#039;installation d&#039;un serveur Debian 12</p>
 	</a>
 	</div>
 

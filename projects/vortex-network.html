@@ -35,18 +35,18 @@
 			<nav id="main-menu">
 				<form id="searchbar" action="	/search.html
 " method="get">
-					<input id="search-field" name="s" type="search" placeholder="Chercher des projets...">
+					<input id="search-field" name="s" type="search" placeholder="Chercher des projets et expériences professionnelles...">
 					<button id="search-button" type="submit">					<img class="icon" src="/images/icons/dark/magnifying-glass.svg" width="20" height="20">
 </button>
 					<div id="search-results">
-						<p id="no-results">Aucun projet trouvé</p>
+						<p id="no-results">Aucun projet ou expérience professionnelle trouvé</p>
 					</div>
 				</form>
 
 				<a href="	/index.html
 ">Accueil</a>
 				<a href="	/projects.html
-">Projets</a>
+">Expérience</a>
 				<a href="	/skills.html
 ">Compétences</a>
 				<a class="contact-me" href="	/contact.html
@@ -57,9 +57,9 @@
 		<main>
 			<div id="title">
 				<!-- <a href="	/projects.html
-#vortex-network">Projets</a> -->
+#vortex-network">Expérience</a> -->
 				<h1><a href="	/projects.html
-#vortex-network">Projets</a> 🞂 Vortex Network</h1>
+#vortex-network">Expérience</a> 🞂 Vortex Network</h1>
 				<div id="page-controls">
 					<button id="dark-theme-toggle" class="theme-toggle">					<img src="/images/icons/moon-solid.svg" width="20" height="20">
 </button>
@@ -93,6 +93,9 @@
 			<a href="#description">Description</a>
 								</li>
 			<li>
+			<a href="#réalisation">Réalisation</a>
+								</li>
+			<li>
 			<a href="#voir-aussi">Voir aussi</a>
 								</li>
 		</ul>
@@ -111,7 +114,26 @@
 <hr>
 	<article class="aligned-content">
 		<div class="content-column">
-			description
+			<p>
+	Ce projet consistait à créer le concept d'un infrastructure réseau
+	complètement open-source, de la réaliser et de la documenter, dans une
+	équipe de 6 membres.
+	</p>
+
+	
+<h2 id="réalisation" class="section">
+	Réalisation
+	<button class="go-to-section" onclick="goto('réalisation')">
+							<img class="icon" src="/images/icons/dark/link.svg" width="20" height="20">
+
+	</button>
+</h2>
+<hr>
+	<p>
+	Ce projet nécessité plusieurs semaines, à la fois pour la conceptualisation
+	que pour la réalisation. L'infrastructure réseau a été réalisée en utilisant
+	des machines virtuelles hébergées sur un cluster d'hyperviseurs Proxmox.
+	</p>
 		</div>
 
 		<aside class="info-box">
@@ -229,6 +251,16 @@
 				Shell
 	</a>
 
+				<a class="tag tag-proxmox"
+		name="proxmox"
+		href="	/search.html
+?tag=Proxmox"
+		style="background-color: rgb(235, 123, 25); border-color: rgb(141, 74, 15);"
+		onmouseover="this.style.backgroundColor='rgb(200, 105, 21)';" 
+		onmouseout="this.style.backgroundColor='rgb(235, 123, 25)';">
+				Proxmox
+	</a>
+
 				<a class="tag tag-python"
 		name="python"
 		href="	/search.html
@@ -326,6 +358,10 @@
 						<img src="/images/projects/chatodyssee/cover.png" width="120">
 						<p>Chatodyssée</p>
 	</a>
+			<a href="	/projects/ambition-it-apprenticeship.html
+">
+				<p>Alternance à Ambtion IT</p>
+	</a>
 			<a href="	/projects/debian-12-server-installation-guide.html
 ">
 				<p>Guide d&#039;installation d&#039;un serveur Debian 12</p>
@@ -334,10 +370,6 @@
 ">
 						<img src="/images/projects/event-management-application/cover.png" width="120">
 						<p>Application de gestion d&#039;évènements</p>
-	</a>
-			<a href="	/projects/development-environment-setup.html
-">
-				<p>Mise en place d&#039;un environnement de développement</p>
 	</a>
 	</div>
 
@@ -359,7 +391,7 @@
 			</div>
 			<hr>
 			<div>
-				<p>Lisez le <a href="https://github.com/nolan-dupont/portfolio">code source</a> de cette page sur GitHub.</p>
+				<p>Lisez le <a href="https://github.com/nolan-dupont/nolan-dupont.github.io">code source</a> de cette page sur GitHub.</p>
 			</div>
 			<hr>
 			<div id="copyrights">

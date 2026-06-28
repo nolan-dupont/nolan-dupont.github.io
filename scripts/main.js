@@ -65,7 +65,7 @@ function gainSearchBarFocus() {
 function projectResult(project) {
 	const a = document.createElement("a");
 	a.classList.add("search-result");
-	a.href = "projects/" + project.id + ".html";
+	a.href = "/projects/" + project.id + ".html";
 
 	const cover = document.createElement("img");
 	if (project.cover !== null) {
